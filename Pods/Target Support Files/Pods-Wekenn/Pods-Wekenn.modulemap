@@ -1,0 +1,6 @@
+framework module Pods_Wekenn {
+  umbrella header "Pods-Wekenn-umbrella.h"
+
+  export *
+  module * { export * }
+}
