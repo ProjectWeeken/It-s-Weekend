@@ -32,7 +32,9 @@ The following **stretch** user stories are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='ProjectWekenn.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='ProjectWekenn.gif' title='comming soon' width='' alt='comming soon' />
+
+<img src='wireframes.gif' title='Test' width='' alt='test' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
