@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		641A4660216E2EF2005971B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641A465F216E2EF2005971B7 /* AppDelegate.swift */; };
-		641A4662216E2EF2005971B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641A4661216E2EF2005971B7 /* ViewController.swift */; };
 		641A4665216E2EF2005971B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641A4663216E2EF2005971B7 /* Main.storyboard */; };
 		641A4667216E2EF5005971B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 641A4666216E2EF5005971B7 /* Assets.xcassets */; };
 		641A466A216E2EF5005971B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641A4668216E2EF5005971B7 /* LaunchScreen.storyboard */; };
@@ -42,7 +41,6 @@
 		208622A255D378AFCA74EB0E /* Pods-Wekenn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wekenn.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wekenn/Pods-Wekenn.release.xcconfig"; sourceTree = "<group>"; };
 		641A465C216E2EF2005971B7 /* Wekenn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wekenn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		641A465F216E2EF2005971B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		641A4661216E2EF2005971B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		641A4664216E2EF2005971B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		641A4666216E2EF5005971B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		641A4669216E2EF5005971B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -137,8 +135,8 @@
 		641A465E216E2EF2005971B7 /* Wekenn */ = {
 			isa = PBXGroup;
 			children = (
+				96B36C9E218967D2007F8EE1 /* ViewControllers */,
 				641A465F216E2EF2005971B7 /* AppDelegate.swift */,
-				641A4661216E2EF2005971B7 /* ViewController.swift */,
 				641A4663216E2EF2005971B7 /* Main.storyboard */,
 				641A4666216E2EF5005971B7 /* Assets.xcassets */,
 				641A4668216E2EF5005971B7 /* LaunchScreen.storyboard */,
@@ -163,6 +161,13 @@
 				641A4681216E2EF5005971B7 /* Info.plist */,
 			);
 			path = WekennUITests;
+			sourceTree = "<group>";
+		};
+		96B36C9E218967D2007F8EE1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,15 +306,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-WekennUITests-checkManifestLockResult.txt",
 			);
@@ -323,19 +324,19 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Wekenn/Pods-Wekenn-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -347,15 +348,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Wekenn-checkManifestLockResult.txt",
 			);
@@ -369,15 +366,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-WekennTests-checkManifestLockResult.txt",
 			);
@@ -393,7 +386,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				641A4662216E2EF2005971B7 /* ViewController.swift in Sources */,
 				641A4660216E2EF2005971B7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

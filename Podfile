@@ -7,6 +7,7 @@ target 'Wekenn' do
 
   # Pods for Wekenn
   pod 'AlamofireImage'
+  pod 'Parse'
 
   target 'WekennTests' do
     inherit! :search_paths
