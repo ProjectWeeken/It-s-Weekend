@@ -1,6 +1,6 @@
 ## *It's WeekEnd*
 
-**It's WeekEnd** is a dating app with a mix of social media.
+**It's WeekEnd** is a dating app with a mix of social media
 
 
 ## User Stories
@@ -41,7 +41,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## License
 
-    Copyright [2018] [Isaac Samuel, Anne Kerrie Leveille, Stephane Loubeau]
+    Copyright [2018] [Samuel ISAAC, Anne Kerrie LEVEILLE, Stephane LOUBEAU]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
