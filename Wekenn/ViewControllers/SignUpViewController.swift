@@ -57,17 +57,40 @@ class SignUpViewController: UIViewController {
             UIViewController.removeSpinner(spinner: sv)
             //self.AcitivityIndicator.stopAnimating()
         }else{
+        // Sign up the user asynchronously
+        newUser.signUpInBackground(block: { (succeed, error) -> Void in
+        
+        if ((error) != nil) {
+        print("Error")
+        
+        } else {
+            /*
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "homeID")
+        self.present(viewController, animated: true, completion: nil)*/
+        print("signUp successfully")
+        print("Logged Successfully")
+        self.loadHomeScreen()
+        }
+        })
+        
+    }
+        
+        /*
+        {
         newUser.signUpInBackground { (success, error) in
             UIViewController.removeSpinner(spinner: sv)
             if success{
+                print("Logged Successfully")
                 self.loadHomeScreen()
             }else{
                 if let descrip = error?.localizedDescription{
+                    print("Error to create account")
                     self.displayErrorMessage(message: descrip)
                 }
             }
         }
         }
+        */
         
         
     }

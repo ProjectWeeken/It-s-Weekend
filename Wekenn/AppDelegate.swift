@@ -20,9 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Parse.initialize(
             with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
-                configuration.applicationId = "Itsweekend"
+                configuration.applicationId = "itsweekend"
                 configuration.clientKey = "itsweekend-asldfoiuehjhsihsiuaihodifhspa"  // set to nil assuming you have not set clientKey
-                configuration.server = "http://itsweekend.herokuapp.com/parse"
+                configuration.server = "https://itsweekend.herokuapp.com/parse"
             })
         )
         
