@@ -13,6 +13,9 @@
 		641A466A216E2EF5005971B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641A4668216E2EF5005971B7 /* LaunchScreen.storyboard */; };
 		641A4675216E2EF5005971B7 /* WekennTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641A4674216E2EF5005971B7 /* WekennTests.swift */; };
 		641A4680216E2EF5005971B7 /* WekennUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641A467F216E2EF5005971B7 /* WekennUITests.swift */; };
+		944BB0D721AF60E200F8A0EE /* Mapdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944BB0D621AF60E200F8A0EE /* Mapdata.swift */; };
+		944BB0DA21AF875D00F8A0EE /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 944BB0D921AF875D00F8A0EE /* video.mp4 */; };
+		944BB0DC21AF893400F8A0EE /* PlayOurVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944BB0DB21AF893400F8A0EE /* PlayOurVideo.swift */; };
 		96B36CA621896BFD007F8EE1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA521896BFD007F8EE1 /* LoginViewController.swift */; };
 		96B36CA821896C08007F8EE1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA721896C08007F8EE1 /* SignUpViewController.swift */; };
 		96B36CAA21896C15007F8EE1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA921896C15007F8EE1 /* HomeViewController.swift */; };
@@ -55,6 +58,9 @@
 		641A467F216E2EF5005971B7 /* WekennUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WekennUITests.swift; sourceTree = "<group>"; };
 		641A4681216E2EF5005971B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		674DCEDCABAA15ED25353148 /* Pods-WekennTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WekennTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WekennTests/Pods-WekennTests.release.xcconfig"; sourceTree = "<group>"; };
+		944BB0D621AF60E200F8A0EE /* Mapdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapdata.swift; sourceTree = "<group>"; };
+		944BB0D921AF875D00F8A0EE /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = SOURCE_ROOT; };
+		944BB0DB21AF893400F8A0EE /* PlayOurVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayOurVideo.swift; sourceTree = "<group>"; };
 		96B36CA521896BFD007F8EE1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		96B36CA721896C08007F8EE1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		96B36CA921896C15007F8EE1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -141,9 +147,11 @@
 		641A465E216E2EF2005971B7 /* Wekenn */ = {
 			isa = PBXGroup;
 			children = (
+				944BB0D521AF607D00F8A0EE /* Model */,
 				96B36C9E218967D2007F8EE1 /* ViewControllers */,
 				641A465F216E2EF2005971B7 /* AppDelegate.swift */,
 				641A4663216E2EF2005971B7 /* Main.storyboard */,
+				944BB0D921AF875D00F8A0EE /* video.mp4 */,
 				641A4666216E2EF5005971B7 /* Assets.xcassets */,
 				641A4668216E2EF5005971B7 /* LaunchScreen.storyboard */,
 				641A466B216E2EF5005971B7 /* Info.plist */,
@@ -169,12 +177,21 @@
 			path = WekennUITests;
 			sourceTree = "<group>";
 		};
+		944BB0D521AF607D00F8A0EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				944BB0D621AF60E200F8A0EE /* Mapdata.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		96B36C9E218967D2007F8EE1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				96B36CA521896BFD007F8EE1 /* LoginViewController.swift */,
 				96B36CA721896C08007F8EE1 /* SignUpViewController.swift */,
 				96B36CA921896C15007F8EE1 /* HomeViewController.swift */,
+				944BB0DB21AF893400F8A0EE /* PlayOurVideo.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -290,6 +307,7 @@
 				641A466A216E2EF5005971B7 /* LaunchScreen.storyboard in Resources */,
 				641A4667216E2EF5005971B7 /* Assets.xcassets in Resources */,
 				641A4665216E2EF2005971B7 /* Main.storyboard in Resources */,
+				944BB0DA21AF875D00F8A0EE /* video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,8 +415,10 @@
 			files = (
 				96B36CA821896C08007F8EE1 /* SignUpViewController.swift in Sources */,
 				96B36CA621896BFD007F8EE1 /* LoginViewController.swift in Sources */,
+				944BB0DC21AF893400F8A0EE /* PlayOurVideo.swift in Sources */,
 				641A4660216E2EF2005971B7 /* AppDelegate.swift in Sources */,
 				96B36CAA21896C15007F8EE1 /* HomeViewController.swift in Sources */,
+				944BB0D721AF60E200F8A0EE /* Mapdata.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

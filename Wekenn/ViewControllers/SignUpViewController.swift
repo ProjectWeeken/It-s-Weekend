@@ -11,6 +11,8 @@ import Parse
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var firstNameField: UITextField!
+    @IBOutlet weak var lastNameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
@@ -33,6 +35,8 @@ class SignUpViewController: UIViewController {
         
         let newUser = PFUser()
         
+        //newUser.First; Name = firstNameField.text
+        //newUser.Last; Name = lastNameField.text
         newUser.email = emailField.text
         newUser.username = usernameField.text
         newUser.password = passwordField.text
