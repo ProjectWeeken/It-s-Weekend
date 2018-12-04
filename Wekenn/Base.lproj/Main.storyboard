@@ -103,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="wD4-16-2B4">
             <objects>
-                <viewController id="iFU-fu-FuQ" sceneMemberID="viewController">
+                <viewController title="Map View Controller" id="iFU-fu-FuQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y88-aV-p19">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,13 +137,24 @@
                     <view key="view" contentMode="scaleToFill" id="kD3-Qo-TUn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xa4-G1-dh3">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="D62-Ps-jzt"/>
+                                    <tabBarItem systemItem="more" id="KXM-pf-0Ge"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="qgR-9a-K5X"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Wt-CU-h4Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1329" y="533"/>
+            <point key="canvasLocation" x="1271" y="620"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="eCx-0H-S7x">
@@ -209,14 +220,14 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="cancelSignUpSegue" id="p1n-zt-510"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XT3-Fw-SMd" userLabel="First Name">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XT3-Fw-SMd" userLabel="First Name">
                                 <rect key="frame" x="68" y="172" width="239" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jl8-5V-nAj" userLabel="Last Name">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jl8-5V-nAj" userLabel="Last Name">
                                 <rect key="frame" x="67" y="221" width="239" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -240,6 +251,56 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="880.20989505247383"/>
         </scene>
+        <!--Item 2-->
+        <scene sceneID="oiZ-51-nM3">
+            <objects>
+                <viewController id="Rky-tl-BYu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="41u-wg-rEG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="h4V-n9-pgd"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="SUV-vg-6Xc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fMp-Ok-6sk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1272" y="2072"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="jss-Nh-yLg">
+            <objects>
+                <viewController id="hDm-l1-1Jn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xDT-O5-0m9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="d5Y-QZ-doN"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="ekg-Gd-Vka"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dTp-gC-v96" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1272" y="1405"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="PIl-yx-GEi">
+            <objects>
+                <tabBarController id="zlv-xP-7wo" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dQM-GM-XK2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hDm-l1-1Jn" kind="relationship" relationship="viewControllers" id="KeK-qn-LZk"/>
+                        <segue destination="Rky-tl-BYu" kind="relationship" relationship="viewControllers" id="VQm-RT-oYY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFt-3H-vPX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="1741"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Love" width="1440" height="810"/>
@@ -247,6 +308,6 @@
         <image name="currentLocation" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Kwo-q9-1vq"/>
+        <segue reference="Owz-La-oB4"/>
     </inferredMetricsTieBreakers>
 </document>
