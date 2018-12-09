@@ -14,11 +14,13 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     
     override func viewDidAppear(_ animated: Bool) {
+        
        /* let currentUser = PFUser.current()
         if currentUser != nil {
             loadHomeScreen()
         }*/
     }
+    
     func loadHomeScreen(){
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let loggedInViewController = storyBoard.instantiateViewController(withIdentifier: "homeViewID") as! HomeViewController
@@ -63,14 +65,6 @@ class LoginViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
