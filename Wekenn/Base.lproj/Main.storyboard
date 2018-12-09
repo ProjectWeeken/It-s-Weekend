@@ -44,10 +44,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Love" translatesAutoresizingMaskIntoConstraints="NO" id="pbi-aG-uYG">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email or Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SnL-xR-WqW">
                                 <rect key="frame" x="42" y="356" width="292" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -303,11 +299,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Love" width="1920" height="1080"/>
         <image name="Meet" width="970" height="582"/>
         <image name="currentLocation" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Owz-La-oB4"/>
+        <segue reference="Kwo-q9-1vq"/>
     </inferredMetricsTieBreakers>
 </document>
