@@ -240,11 +240,118 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="880.20989505247383"/>
         </scene>
+        <!--Item 2-->
+        <scene sceneID="3kF-5c-shu">
+            <objects>
+                <viewController id="GgE-MS-h1E" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rD5-ZQ-dcV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DSz-no-cHl"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Ift-Di-WWj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EYz-Qt-mb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1329" y="2213"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="N3g-Nk-y8d">
+            <objects>
+                <viewController id="dtL-md-o2W" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DxS-os-om4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bV1-F4-jvz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="gK5-Wm-ejb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u8h-cn-LOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1329" y="1289"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ncQ-t1-aoq">
+            <objects>
+                <tabBarController id="ZC4-Ih-hfx" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I0d-LG-nfN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dtL-md-o2W" kind="relationship" relationship="viewControllers" id="Nch-Fa-rm4"/>
+                        <segue destination="GgE-MS-h1E" kind="relationship" relationship="viewControllers" id="AjM-3r-0KJ"/>
+                        <segue destination="u0b-C1-SeP" kind="relationship" relationship="viewControllers" id="8Vy-ZJ-CFh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KFz-vg-hC9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="1742"/>
+        </scene>
+        <!--Discover-->
+        <scene sceneID="gup-04-d1f">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hi7-j4-Hom" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="DiscoverController" automaticallyAdjustsScrollViewInsets="NO" id="u0b-C1-SeP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Discover" image="findPerson" id="7Ld-U6-fhM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="klX-ow-SBK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.82745098039999998" green="0.35294117650000001" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1329" y="3142"/>
+        </scene>
+        <!--Matches-->
+        <scene sceneID="W0o-lr-GNb">
+            <objects>
+                <navigationController storyboardIdentifier="MatchesController" automaticallyAdjustsScrollViewInsets="NO" id="D6X-zT-vyP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Matches" image="chat" selectedImage="chat_filled" id="eDe-1l-zRs"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="oxS-oC-205">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.82695510790000004" green="0.35423344400000001" blue="0.2158213745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8CP-VN-H4J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1329" y="4012"/>
+        </scene>
+        <!--Dates-->
+        <scene sceneID="Kpr-7T-kQ5">
+            <objects>
+                <navigationController storyboardIdentifier="DatesController" automaticallyAdjustsScrollViewInsets="NO" id="8MN-au-bgc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dates" image="meal" selectedImage="meal_filled" id="S3S-FS-ZRf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="W2L-dp-wyD">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.82695510790000004" green="0.35423344400000001" blue="0.2158213745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="muC-zb-yEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1306" y="4836"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Love" width="1440" height="810"/>
         <image name="Meet" width="970" height="582"/>
+        <image name="chat" width="16" height="16"/>
+        <image name="chat_filled" width="16" height="16"/>
         <image name="currentLocation" width="256" height="256"/>
+        <image name="findPerson" width="16" height="16"/>
+        <image name="meal" width="16" height="16"/>
+        <image name="meal_filled" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Kwo-q9-1vq"/>
