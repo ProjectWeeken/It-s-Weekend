@@ -13,7 +13,7 @@
         <!--Welcome View-->
         <scene sceneID="xfK-x0-5xp">
             <objects>
-                <viewController title="Welcome View" id="LeF-xB-Xio" customClass="PlayOurVideo" customModule="Wekenn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Welcome View" id="LeF-xB-Xio" customClass="LoadingViewViewController" customModule="Wekenn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f1S-pX-BQg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

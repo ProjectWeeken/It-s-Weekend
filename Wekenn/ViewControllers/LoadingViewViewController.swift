@@ -17,7 +17,7 @@ class LoadingViewViewController: UIViewController {
             firstImageView.frame = view.frame
             view.addSubview(firstImageView)
         
-            imageFadeIn(firstImageView)
+            //imageFadeIn(firstImageView)
     }
 
     func imageFadeIn(imageView: UIImageView) {
