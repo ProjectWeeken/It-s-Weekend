@@ -47,9 +47,8 @@ class HomeViewController: UIViewController {
             imageView.layer.cornerRadius = 20.0
             imageView.layer.masksToBounds = true
             listView.addSubview(imageView)
-            /*
             //attach tap detector
-            imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapImageView)))*/
+            imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapImageView)))
         }
         
         listView.backgroundColor = UIColor.clear

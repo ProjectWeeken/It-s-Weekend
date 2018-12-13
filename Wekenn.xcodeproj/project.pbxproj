@@ -19,6 +19,7 @@
 		96B36CAA21896C15007F8EE1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA921896C15007F8EE1 /* HomeViewController.swift */; };
 		96BE653321C1EE2E00EEBB6C /* LoadingViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE653221C1EE2E00EEBB6C /* LoadingViewViewController.swift */; };
 		96BE653D21C2484900EEBB6C /* Umodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE653C21C2484900EEBB6C /* Umodel.swift */; };
+		96BE653F21C2524700EEBB6C /* UdetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE653E21C2524700EEBB6C /* UdetailsViewController.swift */; };
 		D06BD7AB61503F6F6BE48835 /* Pods_Wekenn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18657DA265B2CFF6D121EB5 /* Pods_Wekenn.framework */; };
 		D107600AA1E04C84C10BDAB5 /* Pods_WekennUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4D9AB79614409955C302AD /* Pods_WekennUITests.framework */; };
 		D92D41B2721B13F4DFFC39D5 /* Pods_WekennTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D698F8AA3079BBDCF2C6FE0E /* Pods_WekennTests.framework */; };
@@ -64,6 +65,7 @@
 		96B36CA921896C15007F8EE1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		96BE653221C1EE2E00EEBB6C /* LoadingViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewViewController.swift; sourceTree = "<group>"; };
 		96BE653C21C2484900EEBB6C /* Umodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Umodel.swift; sourceTree = "<group>"; };
+		96BE653E21C2524700EEBB6C /* UdetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdetailsViewController.swift; sourceTree = "<group>"; };
 		9970A3E319C01C3962079C72 /* Pods-WekennUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WekennUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WekennUITests/Pods-WekennUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BA314AB9418BADB19E687832 /* Pods-WekennUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WekennUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WekennUITests/Pods-WekennUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D698F8AA3079BBDCF2C6FE0E /* Pods_WekennTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WekennTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,6 +202,7 @@
 				96B36CA721896C08007F8EE1 /* SignUpViewController.swift */,
 				96BE653221C1EE2E00EEBB6C /* LoadingViewViewController.swift */,
 				96B36CA921896C15007F8EE1 /* HomeViewController.swift */,
+				96BE653E21C2524700EEBB6C /* UdetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96BE653321C1EE2E00EEBB6C /* LoadingViewViewController.swift in Sources */,
+				96BE653F21C2524700EEBB6C /* UdetailsViewController.swift in Sources */,
 				96B36CA821896C08007F8EE1 /* SignUpViewController.swift in Sources */,
 				96B36CA621896BFD007F8EE1 /* LoginViewController.swift in Sources */,
 				96BE653D21C2484900EEBB6C /* Umodel.swift in Sources */,
