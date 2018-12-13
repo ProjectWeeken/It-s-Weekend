@@ -476,7 +476,7 @@ Start the conversation with your correspondence by saying what you want: · BECO
         <image name="-logou&amp;me" width="648" height="648"/>
         <image name="Love-2" width="1920" height="1080"/>
         <image name="Love-3" width="1920" height="1080"/>
-        <image name="bg" width="16" height="16"/>
+        <image name="bg" width="640" height="1136"/>
         <image name="currentLocation" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
