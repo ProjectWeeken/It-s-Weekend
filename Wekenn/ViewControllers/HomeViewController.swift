@@ -10,6 +10,9 @@ import UIKit
 import Parse
 
 class HomeViewController: UIViewController {
+    @IBOutlet var listView: UIScrollView!
+    @IBOutlet var bgImage: UIImageView!
+    var selectedImage: UIImageView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
