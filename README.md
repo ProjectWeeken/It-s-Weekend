@@ -9,7 +9,7 @@ The following **required** user stories are complete:
 
 - [X] User sees app icon in home screen and styled launch screen
 - [X] User can sign up and sign in to the login screen
-- [ ] User sees alerts for login exceptions, i.e. "account already exists", "wrong credentials", etc.
+- [X] User sees alerts for login exceptions, i.e. "account already exists", "wrong credentials", etc.
 - [ ] Make a profile of the person interest
 - [ ] Choose someone and send a request
 - [ ] If the person accept the request, she can close the request
