@@ -74,7 +74,17 @@ class HomeViewController: UIViewController {
             width: CGFloat(Ums.count) * (itemWidth + horizontalPadding) + horizontalPadding,
             height:  0)
     }
-
+    @objc func didTapImageView(_ tap: UITapGestureRecognizer) {
+        selectedImage = tap.view as? UIImageView
+        
+        let index = tap.view!.tag
+        let selectedUm = Ums[index]
+        
+        //present details view controller
+        let Udetails = storyboard!.instantiateViewController(withIdentifier: "UdetailsViewController") as! UdetailsViewController
+        Udetails.Um = selectedUm
+        present(Udetails, animated: true, completion: nil)
+    }
     
     
     
