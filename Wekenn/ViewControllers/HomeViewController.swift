@@ -47,14 +47,35 @@ class HomeViewController: UIViewController {
             imageView.layer.cornerRadius = 20.0
             imageView.layer.masksToBounds = true
             listView.addSubview(imageView)
-            
+            /*
             //attach tap detector
-            imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapImageView)))
+            imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapImageView)))*/
         }
         
         listView.backgroundColor = UIColor.clear
         positionListItems()
     }
+    //position all images inside the list
+    func positionListItems() {
+        let listHeight = listView.frame.height
+        let itemHeight: CGFloat = listHeight * 1.33
+        let aspectRatio = UIScreen.main.bounds.height / UIScreen.main.bounds.width
+        let itemWidth: CGFloat = itemHeight / aspectRatio
+        
+        let horizontalPadding: CGFloat = 10.0
+        
+        for i in Ums.indices {
+            let imageView = listView.viewWithTag(i) as! UIImageView
+            imageView.frame = CGRect(
+                x: CGFloat(i) * itemWidth + CGFloat(i+1) * horizontalPadding, y: 0.0,
+                width: itemWidth, height: itemHeight)
+        }
+        
+        listView.contentSize = CGSize(
+            width: CGFloat(Ums.count) * (itemWidth + horizontalPadding) + horizontalPadding,
+            height:  0)
+    }
+
     
     
     
