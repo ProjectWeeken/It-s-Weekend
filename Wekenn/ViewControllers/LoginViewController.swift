@@ -14,11 +14,11 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     
     override func viewDidAppear(_ animated: Bool) {
-        /*
+        
         let currentUser = PFUser.current()
         if currentUser != nil {
             loadHomeScreen()
-        }*/
+        }
     }
     
     func loadHomeScreen(){
