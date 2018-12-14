@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Matches-->
+        <scene sceneID="xtk-Dj-ktF">
+            <objects>
+                <viewController storyboardIdentifier="MatchesVC" title="Matches" id="4Zb-Wp-n6A" userLabel="Matches" customClass="MatchesVC" customModule="Food_Love" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="CRI-tL-Uxr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   New Matches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyo-wg-O6i">
+                                <rect key="frame" x="0.0" y="20" width="375" height="23"/>
+                                <color key="backgroundColor" name="appColorBlack"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" red="0.82695510790000004" green="0.35423344400000001" blue="0.2158213745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vre-dP-bO1">
+                                <rect key="frame" x="0.0" y="43" width="375" height="111"/>
+                                <color key="backgroundColor" name="appColorBlack"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ikZ-PT-ORx">
+                                    <size key="itemSize" width="121" height="113"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MatchesCell" id="7fU-0x-Blh" customClass="MatchesCell" customModule="Food_Love" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-1" width="121" height="113"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="121" height="113"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qi8-ra-eSs">
+                                                    <rect key="frame" x="0.0" y="79" width="121" height="34"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                    <color key="textColor" name="appColorGray"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d2a-AD-eL6" customClass="RoundedImageView" customModule="Food_Love" customModuleProvider="target">
+                                                    <rect key="frame" x="12" y="0.0" width="79" height="79"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="d2a-AD-eL6" secondAttribute="height" multiplier="1:1" id="Yo8-fv-kfB"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="41"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Qi8-ra-eSs" firstAttribute="top" secondItem="d2a-AD-eL6" secondAttribute="bottom" id="25i-If-fzx"/>
+                                            <constraint firstItem="Qi8-ra-eSs" firstAttribute="leading" secondItem="7fU-0x-Blh" secondAttribute="leading" id="EDj-v9-Xx2"/>
+                                            <constraint firstAttribute="bottom" secondItem="Qi8-ra-eSs" secondAttribute="bottom" id="FKh-AB-cQh"/>
+                                            <constraint firstItem="d2a-AD-eL6" firstAttribute="top" secondItem="7fU-0x-Blh" secondAttribute="top" id="JgL-sv-6RW"/>
+                                            <constraint firstItem="d2a-AD-eL6" firstAttribute="leading" secondItem="7fU-0x-Blh" secondAttribute="leadingMargin" constant="4" id="dUq-e4-YSQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qi8-ra-eSs" secondAttribute="trailing" id="hfr-2P-1I4"/>
+                                            <constraint firstItem="d2a-AD-eL6" firstAttribute="height" secondItem="7fU-0x-Blh" secondAttribute="height" multiplier="0.7" id="uGv-a1-Kuz"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="matchImageView" destination="d2a-AD-eL6" id="No6-Gd-bDq"/>
+                                            <outlet property="matchNameLabel" destination="Qi8-ra-eSs" id="Glq-7L-2Cc"/>
+                                            <segue destination="boK-Dv-pSe" kind="show" id="49n-BH-0EA"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dwy-8f-aYx">
+                                <rect key="frame" x="0.0" y="154" width="375" height="513"/>
+                                <color key="backgroundColor" name="appColorWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ConversationCell" editingAccessoryType="detailDisclosureButton" rowHeight="77" id="Cf8-Li-x8Q" customClass="ConversationCell" customModule="Food_Love" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="77"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cf8-Li-x8Q" id="drm-yD-bPR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="76.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d94-TP-D3T">
+                                                    <rect key="frame" x="76.5" y="15" width="44.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labelkknkmk knknknknnnnkl jnjnn jnjnjn jnininion nininin jninin jbnninin knkni" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xzx-Tp-WjB">
+                                                    <rect key="frame" x="76.5" y="39.5" width="293.5" height="31.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed, March 21, 4:50pm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoK-7M-aWN">
+                                                    <rect key="frame" x="255" y="5" width="115" height="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gQx-4L-njc" customClass="RoundedImageView" customModule="Food_Love" customModuleProvider="target">
+                                                    <rect key="frame" x="5" y="5" width="66.5" height="66.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="gQx-4L-njc" secondAttribute="height" multiplier="1:1" id="XkO-DD-c8t"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="32"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="new message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ME-qK-asS" customClass="UILabelX" customModule="Food_Love" customModuleProvider="target">
+                                                    <rect key="frame" x="264" y="21" width="106" height="18"/>
+                                                    <color key="backgroundColor" name="appColorRed"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="106" id="8gs-bg-3fN"/>
+                                                        <constraint firstAttribute="height" constant="18" id="FLD-I0-2I0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" name="appColorWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Og-ZJ-cl9">
+                                                    <rect key="frame" x="126" y="17.5" width="15" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="Lgm-IM-MWd"/>
+                                                        <constraint firstAttribute="width" constant="15" id="wKN-ol-b5e"/>
+                                                    </constraints>
+                                                    <state key="normal" image="online"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" name="appColorGray"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="8ME-qK-asS" secondAttribute="trailing" constant="5" id="8u7-By-wn2"/>
+                                                <constraint firstItem="gQx-4L-njc" firstAttribute="leading" secondItem="drm-yD-bPR" secondAttribute="leading" constant="5" id="9kd-Va-EBL"/>
+                                                <constraint firstItem="9Og-ZJ-cl9" firstAttribute="leading" secondItem="d94-TP-D3T" secondAttribute="trailing" constant="5" id="BDG-yx-9Bi"/>
+                                                <constraint firstItem="d94-TP-D3T" firstAttribute="leading" secondItem="gQx-4L-njc" secondAttribute="trailing" constant="5" id="CzD-n0-pdR"/>
+                                                <constraint firstItem="Xzx-Tp-WjB" firstAttribute="top" secondItem="d94-TP-D3T" secondAttribute="bottom" constant="5" id="G0w-d0-I3o"/>
+                                                <constraint firstItem="8ME-qK-asS" firstAttribute="top" secondItem="XoK-7M-aWN" secondAttribute="bottom" constant="4" id="KJ8-F9-OFV"/>
+                                                <constraint firstItem="Xzx-Tp-WjB" firstAttribute="leading" secondItem="gQx-4L-njc" secondAttribute="trailing" constant="5" id="LDZ-ND-yws"/>
+                                                <constraint firstItem="gQx-4L-njc" firstAttribute="top" secondItem="drm-yD-bPR" secondAttribute="top" constant="5" id="Vbj-j0-AlX"/>
+                                                <constraint firstItem="d94-TP-D3T" firstAttribute="top" secondItem="drm-yD-bPR" secondAttribute="top" constant="15" id="WRL-nM-BWd"/>
+                                                <constraint firstAttribute="trailing" secondItem="Xzx-Tp-WjB" secondAttribute="trailing" constant="5" id="bbt-fr-FcG"/>
+                                                <constraint firstItem="XoK-7M-aWN" firstAttribute="top" secondItem="drm-yD-bPR" secondAttribute="top" constant="5" id="hJ1-2x-zKA"/>
+                                                <constraint firstAttribute="trailing" secondItem="XoK-7M-aWN" secondAttribute="trailing" constant="5" id="hOp-Eg-AN3"/>
+                                                <constraint firstItem="9Og-ZJ-cl9" firstAttribute="centerY" secondItem="d94-TP-D3T" secondAttribute="centerY" id="o57-Qo-9RW"/>
+                                                <constraint firstAttribute="bottom" secondItem="gQx-4L-njc" secondAttribute="bottom" constant="5" id="tKH-gQ-Ne0"/>
+                                                <constraint firstItem="d94-TP-D3T" firstAttribute="leading" secondItem="gQx-4L-njc" secondAttribute="trailing" constant="5" id="vIr-Dy-lrd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="lastMessage" destination="Xzx-Tp-WjB" id="ZIq-69-vfU"/>
+                                            <outlet property="loverImage" destination="gQx-4L-njc" id="6IB-UC-4uc"/>
+                                            <outlet property="loverName" destination="d94-TP-D3T" id="LdL-L0-0Nb"/>
+                                            <outlet property="onlineButton" destination="9Og-ZJ-cl9" id="fL9-hb-T8v"/>
+                                            <outlet property="respondLabel" destination="8ME-qK-asS" id="DWv-83-Ga0"/>
+                                            <outlet property="timeStamp" destination="XoK-7M-aWN" id="dcl-eQ-tAx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="vre-dP-bO1" firstAttribute="height" secondItem="CRI-tL-Uxr" secondAttribute="height" multiplier="0.2" constant="-22.400000000000006" id="4Nx-l1-NES"/>
+                            <constraint firstItem="vre-dP-bO1" firstAttribute="trailing" secondItem="EzV-BI-UMI" secondAttribute="trailing" id="8Nt-fa-x0V"/>
+                            <constraint firstItem="dwy-8f-aYx" firstAttribute="top" secondItem="vre-dP-bO1" secondAttribute="bottom" id="GIP-w9-OlV"/>
+                            <constraint firstItem="uyo-wg-O6i" firstAttribute="top" secondItem="EzV-BI-UMI" secondAttribute="top" id="Gds-Z3-74A"/>
+                            <constraint firstItem="uyo-wg-O6i" firstAttribute="trailing" secondItem="EzV-BI-UMI" secondAttribute="trailing" id="LOj-Ni-Ksl"/>
+                            <constraint firstItem="dwy-8f-aYx" firstAttribute="trailing" secondItem="EzV-BI-UMI" secondAttribute="trailing" id="YsY-sA-4L0"/>
+                            <constraint firstItem="vre-dP-bO1" firstAttribute="top" secondItem="EzV-BI-UMI" secondAttribute="top" constant="23" id="arb-JB-izE"/>
+                            <constraint firstItem="dwy-8f-aYx" firstAttribute="centerX" secondItem="CRI-tL-Uxr" secondAttribute="centerX" id="cDA-MH-o2B"/>
+                            <constraint firstItem="dwy-8f-aYx" firstAttribute="bottom" secondItem="EzV-BI-UMI" secondAttribute="bottom" id="kQL-49-RbM"/>
+                            <constraint firstItem="dwy-8f-aYx" firstAttribute="leading" secondItem="EzV-BI-UMI" secondAttribute="leading" id="khg-YQ-bt3"/>
+                            <constraint firstItem="vre-dP-bO1" firstAttribute="centerX" secondItem="CRI-tL-Uxr" secondAttribute="centerX" id="mPZ-eT-Xv4"/>
+                            <constraint firstItem="uyo-wg-O6i" firstAttribute="leading" secondItem="EzV-BI-UMI" secondAttribute="leading" id="nm1-py-UIX"/>
+                            <constraint firstItem="vre-dP-bO1" firstAttribute="leading" secondItem="EzV-BI-UMI" secondAttribute="leading" id="pmB-36-0YM"/>
+                            <constraint firstItem="vre-dP-bO1" firstAttribute="top" secondItem="uyo-wg-O6i" secondAttribute="bottom" id="zFP-mX-o9Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EzV-BI-UMI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Matches" id="x5f-KE-ZyJ"/>
+                    <connections>
+                        <outlet property="conversationsTableView" destination="dwy-8f-aYx" id="I0j-gc-7ik"/>
+                        <outlet property="matchesCollectionView" destination="vre-dP-bO1" id="jP8-Yy-WtC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kiv-UZ-ubf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="-560"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="FRI-pN-2Jm">
+            <objects>
+                <viewController storyboardIdentifier="ChatVC" autoresizesArchivedViewToFullSize="NO" title="Chat" id="boK-Dv-pSe" customClass="ChatVC" customModule="Food_Love" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jhm-qz-G2Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gv5-oR-kOK" userLabel="ProfileTop" customClass="ChatProfileView" customModule="Food_Love" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yxL-yT-Aeu" customClass="RoundedImageView" customModule="Food_Love" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="8" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="yxL-yT-Aeu" secondAttribute="height" multiplier="1:1" id="Ljl-2G-bcd"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="68"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="James" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQI-Vt-fQu">
+                                        <rect key="frame" x="77" y="5" width="54" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30, Doctor, wants kids" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZk-en-bhL">
+                                        <rect key="frame" x="77" y="31" width="170.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite foods" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPs-PW-7uj">
+                                        <rect key="frame" x="79.5" y="57" width="108.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="appColorBlack"/>
+                                <constraints>
+                                    <constraint firstItem="yxL-yT-Aeu" firstAttribute="centerY" secondItem="gv5-oR-kOK" secondAttribute="centerY" id="8hb-Ws-cHs"/>
+                                    <constraint firstItem="UQI-Vt-fQu" firstAttribute="top" secondItem="gv5-oR-kOK" secondAttribute="top" constant="5" id="M5j-zi-da2"/>
+                                    <constraint firstItem="yxL-yT-Aeu" firstAttribute="height" secondItem="gv5-oR-kOK" secondAttribute="height" multiplier="0.8" id="ONT-ac-76Q"/>
+                                    <constraint firstItem="IZk-en-bhL" firstAttribute="leading" secondItem="yxL-yT-Aeu" secondAttribute="trailing" constant="5" id="OeR-pb-Ijl"/>
+                                    <constraint firstItem="CPs-PW-7uj" firstAttribute="top" secondItem="IZk-en-bhL" secondAttribute="bottom" constant="5" id="YV4-Bo-aFv"/>
+                                    <constraint firstItem="UQI-Vt-fQu" firstAttribute="leading" secondItem="yxL-yT-Aeu" secondAttribute="trailing" constant="5" id="abL-J2-VUY"/>
+                                    <constraint firstItem="IZk-en-bhL" firstAttribute="top" secondItem="UQI-Vt-fQu" secondAttribute="bottom" constant="5" id="b5d-gF-3Ha"/>
+                                    <constraint firstAttribute="height" constant="80" id="cD4-fi-N7r"/>
+                                    <constraint firstItem="CPs-PW-7uj" firstAttribute="leading" secondItem="yxL-yT-Aeu" secondAttribute="trailing" constant="7.5" id="xpT-Ik-8Ht"/>
+                                    <constraint firstItem="yxL-yT-Aeu" firstAttribute="leading" secondItem="gv5-oR-kOK" secondAttribute="leading" constant="8" id="ykU-N5-s71"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="loverFoodPreference" destination="CPs-PW-7uj" id="Ggo-KG-c64"/>
+                                    <outlet property="loverImageView" destination="yxL-yT-Aeu" id="Ch7-gE-ZCk"/>
+                                    <outlet property="loverInfoLabel" destination="IZk-en-bhL" id="fqe-Sy-ete"/>
+                                    <outlet property="loverNameLabel" destination="UQI-Vt-fQu" id="bCe-j2-0oG"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A63-I2-SyK" userLabel="SendContainer" customClass="ChatSendView" customModule="Food_Love" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eW8-xN-v2c">
+                                        <rect key="frame" x="8" y="12.5" width="32" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="Esa-h7-YDt"/>
+                                            <constraint firstAttribute="height" constant="25" id="NP9-h3-6Io"/>
+                                        </constraints>
+                                        <state key="normal" image="takephotos"/>
+                                        <connections>
+                                            <action selector="photoButtonPressed:" destination="boK-Dv-pSe" eventType="touchUpInside" id="4WY-rj-Mnd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhR-7m-os0">
+                                        <rect key="frame" x="331" y="12.5" width="32" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="JlV-pG-erS"/>
+                                            <constraint firstAttribute="width" constant="32" id="mhW-0z-tWx"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="sent"/>
+                                        <connections>
+                                            <action selector="sendButtonPressed" destination="boK-Dv-pSe" eventType="touchUpInside" id="t0L-1y-A99"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7U-ap-5BH">
+                                        <rect key="frame" x="52" y="12.5" width="32" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="1gR-3p-dR5"/>
+                                            <constraint firstAttribute="height" constant="25" id="gLf-4g-pn7"/>
+                                        </constraints>
+                                        <state key="normal" image="location"/>
+                                        <connections>
+                                            <action selector="selectLocation:" destination="boK-Dv-pSe" eventType="touchUpInside" id="rK5-8X-JBY"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter text..." textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pyT-F0-Ihn">
+                                        <rect key="frame" x="96" y="10" width="223" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="rPK-1V-3xF"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" name="appColorRed"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AJZ-6A-h8E"/>
+                                    <constraint firstItem="eW8-xN-v2c" firstAttribute="leading" secondItem="A63-I2-SyK" secondAttribute="leading" constant="8" id="KSq-Dj-4du"/>
+                                    <constraint firstItem="pyT-F0-Ihn" firstAttribute="leading" secondItem="M7U-ap-5BH" secondAttribute="trailing" constant="12" id="LsL-qV-TEE"/>
+                                    <constraint firstItem="pyT-F0-Ihn" firstAttribute="centerY" secondItem="A63-I2-SyK" secondAttribute="centerY" id="Qiq-Bm-gv1"/>
+                                    <constraint firstItem="eW8-xN-v2c" firstAttribute="centerY" secondItem="A63-I2-SyK" secondAttribute="centerY" id="a3I-4w-GjZ"/>
+                                    <constraint firstItem="M7U-ap-5BH" firstAttribute="leading" secondItem="eW8-xN-v2c" secondAttribute="trailing" constant="12" id="aQJ-Da-DIj"/>
+                                    <constraint firstItem="OhR-7m-os0" firstAttribute="leading" secondItem="pyT-F0-Ihn" secondAttribute="trailing" constant="12" id="g59-7u-6L7"/>
+                                    <constraint firstItem="M7U-ap-5BH" firstAttribute="centerY" secondItem="A63-I2-SyK" secondAttribute="centerY" id="kgb-T2-m7c"/>
+                                    <constraint firstAttribute="trailing" secondItem="OhR-7m-os0" secondAttribute="trailing" constant="12" id="qel-ci-BTi"/>
+                                    <constraint firstItem="OhR-7m-os0" firstAttribute="centerY" secondItem="A63-I2-SyK" secondAttribute="centerY" id="x5r-Kc-oUN"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" directionalLockEnabled="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" keyboardDismissMode="onDrag" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5zE-oV-Pp5">
+                                <rect key="frame" x="0.0" y="100" width="375" height="517"/>
+                                <color key="backgroundColor" name="appColorWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="W12-V0-VKj">
+                                    <size key="itemSize" width="369" height="207"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <view key="backgroundView" contentMode="scaleToFill" id="6KA-N5-9Td">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="517"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PartnerChatCell" id="GPA-3x-c6R" customClass="PartnerChatCell" customModule="Food_Love" customModuleProvider="target">
+                                        <rect key="frame" x="3" y="0.0" width="369" height="260"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="369" height="260"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7e1-lu-4UX" userLabel="BubbleView" customClass="UIViewX" customModule="Food_Love" customModuleProvider="target">
+                                                    <rect key="frame" x="47" y="0.0" width="193.5" height="260"/>
+                                                    <subviews>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Lorem ipsum dolor sit er elit " translatesAutoresizingMaskIntoConstraints="NO" id="JwS-YQ-gVL">
+                                                            <rect key="frame" x="0.0" y="0.0" width="193.5" height="260"/>
+                                                            <color key="textColor" name="appColorWhite"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                                        </textView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4IN-Fy-2d4" userLabel="messageImage" customClass="UIImageViewX" customModule="Food_Love" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="193.5" height="260"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="16"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAc-GK-UQV">
+                                                            <rect key="frame" x="72" y="105" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="Qls-Jf-Z1f"/>
+                                                                <constraint firstAttribute="height" constant="50" id="nlu-Dh-ofr"/>
+                                                            </constraints>
+                                                            <state key="normal" image="button:kAc-GK-UQV:image"/>
+                                                        </button>
+                                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="mqT-ob-euM">
+                                                            <rect key="frame" x="72" y="105" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="CUT-0j-qdv"/>
+                                                                <constraint firstAttribute="height" constant="50" id="Euh-Jg-ewh"/>
+                                                            </constraints>
+                                                        </activityIndicatorView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="appColorRed"/>
+                                                    <constraints>
+                                                        <constraint firstItem="mqT-ob-euM" firstAttribute="centerY" secondItem="7e1-lu-4UX" secondAttribute="centerY" id="5Ch-EM-kdx"/>
+                                                        <constraint firstAttribute="trailing" secondItem="JwS-YQ-gVL" secondAttribute="trailing" id="5lQ-qg-HMo"/>
+                                                        <constraint firstItem="JwS-YQ-gVL" firstAttribute="leading" secondItem="7e1-lu-4UX" secondAttribute="leading" id="72x-qj-gg6"/>
+                                                        <constraint firstItem="4IN-Fy-2d4" firstAttribute="leading" secondItem="7e1-lu-4UX" secondAttribute="leading" id="7fm-a0-ra3"/>
+                                                        <constraint firstItem="JwS-YQ-gVL" firstAttribute="top" secondItem="7e1-lu-4UX" secondAttribute="top" id="OeI-Lm-nGI"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="TNG-nj-z4S"/>
+                                                        <constraint firstItem="4IN-Fy-2d4" firstAttribute="width" secondItem="7e1-lu-4UX" secondAttribute="width" id="Zej-wJ-b9g"/>
+                                                        <constraint firstItem="4IN-Fy-2d4" firstAttribute="top" secondItem="7e1-lu-4UX" secondAttribute="top" id="dTn-HU-aek"/>
+                                                        <constraint firstItem="kAc-GK-UQV" firstAttribute="centerY" secondItem="7e1-lu-4UX" secondAttribute="centerY" id="jla-CX-Zsh"/>
+                                                        <constraint firstItem="4IN-Fy-2d4" firstAttribute="height" secondItem="7e1-lu-4UX" secondAttribute="height" id="kQZ-mC-z0t"/>
+                                                        <constraint firstItem="mqT-ob-euM" firstAttribute="centerX" secondItem="7e1-lu-4UX" secondAttribute="centerX" id="m7T-Ou-nu0"/>
+                                                        <constraint firstItem="kAc-GK-UQV" firstAttribute="centerX" secondItem="7e1-lu-4UX" secondAttribute="centerX" id="xpA-ms-hcs"/>
+                                                        <constraint firstItem="JwS-YQ-gVL" firstAttribute="height" secondItem="7e1-lu-4UX" secondAttribute="height" id="yiF-aP-xzM"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cGN-sx-Wsd" userLabel="loverImage" customClass="RoundedImageView" customModule="Food_Love" customModuleProvider="target">
+                                                    <rect key="frame" x="9" y="223" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="WXZ-v8-H2C"/>
+                                                        <constraint firstAttribute="width" constant="32" id="Wva-qa-zri"/>
+                                                        <constraint firstAttribute="width" secondItem="cGN-sx-Wsd" secondAttribute="height" multiplier="1:1" id="ifh-A1-SkW"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="7e1-lu-4UX" firstAttribute="height" secondItem="GPA-3x-c6R" secondAttribute="height" id="JjR-it-W2X"/>
+                                            <constraint firstItem="cGN-sx-Wsd" firstAttribute="leading" secondItem="GPA-3x-c6R" secondAttribute="leading" constant="9" id="Puj-ef-OMO"/>
+                                            <constraint firstItem="7e1-lu-4UX" firstAttribute="centerY" secondItem="GPA-3x-c6R" secondAttribute="centerY" id="TjQ-DA-itH"/>
+                                            <constraint firstItem="7e1-lu-4UX" firstAttribute="leading" secondItem="cGN-sx-Wsd" secondAttribute="trailing" constant="6" id="Wpj-8M-ISW"/>
+                                            <constraint firstAttribute="bottom" secondItem="cGN-sx-Wsd" secondAttribute="bottom" constant="5" id="mWK-hi-alG"/>
+                                        </constraints>
+                                        <size key="customSize" width="369" height="260"/>
+                                        <connections>
+                                            <outlet property="activityIndicatorView" destination="mqT-ob-euM" id="xpQ-Wc-xH5"/>
+                                            <outlet property="bubbleView" destination="7e1-lu-4UX" id="FII-AZ-2m6"/>
+                                            <outlet property="messageImageView" destination="4IN-Fy-2d4" id="nAt-Bw-vzU"/>
+                                            <outlet property="playButton" destination="kAc-GK-UQV" id="8oE-EZ-KmL"/>
+                                            <outlet property="profileImageView" destination="cGN-sx-Wsd" id="1dw-8q-q6M"/>
+                                            <outlet property="textView" destination="JwS-YQ-gVL" id="7qk-pQ-5bO"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserChatCell" id="Gkh-r5-D6p" customClass="UserChatCell" customModule="Food_Love" customModuleProvider="target">
+                                        <rect key="frame" x="3" y="270" width="369" height="144"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="369" height="144"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYO-aF-Gvt" userLabel="BubbleView" customClass="UIViewX" customModule="Food_Love" customModuleProvider="target">
+                                                    <rect key="frame" x="171.5" y="0.0" width="189.5" height="144"/>
+                                                    <subviews>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do." textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="BFd-wg-WyU">
+                                                            <rect key="frame" x="0.0" y="0.0" width="189.5" height="144"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hW8-cw-Nva" userLabel="messageImage" customClass="UIImageViewX" customModule="Food_Love" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="189.5" height="144"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="16"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7u-Z1-xwb">
+                                                            <rect key="frame" x="70" y="47" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="LsI-bT-Kz2"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Mpk-Q7-sRR"/>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="lsD-h6-MyP"/>
+                                                                <constraint firstAttribute="height" constant="50" id="raj-eW-KzD"/>
+                                                            </constraints>
+                                                            <state key="normal" image="play"/>
+                                                        </button>
+                                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="q5O-PS-y5K">
+                                                            <rect key="frame" x="70" y="47" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Mg6-ep-Dma"/>
+                                                                <constraint firstAttribute="height" constant="50" id="Ubx-7m-93P"/>
+                                                                <constraint firstAttribute="width" constant="50" id="qWK-73-Sf8"/>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="vxu-jF-ajN"/>
+                                                            </constraints>
+                                                        </activityIndicatorView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="appColorGray"/>
+                                                    <constraints>
+                                                        <constraint firstItem="q5O-PS-y5K" firstAttribute="centerY" secondItem="hW8-cw-Nva" secondAttribute="centerY" id="0Iq-ja-c35"/>
+                                                        <constraint firstItem="hW8-cw-Nva" firstAttribute="height" secondItem="RYO-aF-Gvt" secondAttribute="height" id="3kB-rK-F7n"/>
+                                                        <constraint firstItem="q5O-PS-y5K" firstAttribute="centerY" secondItem="RYO-aF-Gvt" secondAttribute="centerY" id="4bA-AC-Owz"/>
+                                                        <constraint firstAttribute="trailing" secondItem="BFd-wg-WyU" secondAttribute="trailing" id="DO8-8j-J09"/>
+                                                        <constraint firstItem="C7u-Z1-xwb" firstAttribute="centerX" secondItem="RYO-aF-Gvt" secondAttribute="centerX" id="HuA-09-hIf"/>
+                                                        <constraint firstItem="hW8-cw-Nva" firstAttribute="top" secondItem="RYO-aF-Gvt" secondAttribute="top" id="IYa-li-Wte"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="JgR-tH-Gdp"/>
+                                                        <constraint firstItem="hW8-cw-Nva" firstAttribute="centerX" secondItem="RYO-aF-Gvt" secondAttribute="centerX" id="NLE-EO-1GW"/>
+                                                        <constraint firstItem="q5O-PS-y5K" firstAttribute="centerX" secondItem="RYO-aF-Gvt" secondAttribute="centerX" id="XnX-0c-pjH"/>
+                                                        <constraint firstItem="C7u-Z1-xwb" firstAttribute="centerX" secondItem="hW8-cw-Nva" secondAttribute="centerX" id="Xvv-Ns-s7b"/>
+                                                        <constraint firstItem="BFd-wg-WyU" firstAttribute="width" secondItem="RYO-aF-Gvt" secondAttribute="width" id="Z1p-lh-sQd"/>
+                                                        <constraint firstItem="C7u-Z1-xwb" firstAttribute="centerY" secondItem="RYO-aF-Gvt" secondAttribute="centerY" id="ZNi-cE-itu"/>
+                                                        <constraint firstItem="BFd-wg-WyU" firstAttribute="height" secondItem="RYO-aF-Gvt" secondAttribute="height" id="gHF-l8-vgR"/>
+                                                        <constraint firstItem="hW8-cw-Nva" firstAttribute="width" secondItem="RYO-aF-Gvt" secondAttribute="width" id="lTM-5y-7pY"/>
+                                                        <constraint firstItem="q5O-PS-y5K" firstAttribute="centerX" secondItem="hW8-cw-Nva" secondAttribute="centerX" id="lzF-k8-VDE"/>
+                                                        <constraint firstItem="C7u-Z1-xwb" firstAttribute="centerY" secondItem="hW8-cw-Nva" secondAttribute="centerY" id="mm2-NP-umm"/>
+                                                        <constraint firstItem="hW8-cw-Nva" firstAttribute="centerY" secondItem="RYO-aF-Gvt" secondAttribute="centerY" id="noN-FX-F5H"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hW8-cw-Nva" secondAttribute="trailing" id="r3N-ZK-jp4"/>
+                                                        <constraint firstItem="hW8-cw-Nva" firstAttribute="height" secondItem="RYO-aF-Gvt" secondAttribute="height" id="sms-RA-pby"/>
+                                                        <constraint firstItem="BFd-wg-WyU" firstAttribute="top" secondItem="RYO-aF-Gvt" secondAttribute="top" id="spk-vE-s8K"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="RYO-aF-Gvt" secondAttribute="trailing" constant="8" id="AmB-33-bck"/>
+                                            <constraint firstAttribute="bottom" secondItem="RYO-aF-Gvt" secondAttribute="bottom" id="PIO-kG-THe"/>
+                                            <constraint firstItem="RYO-aF-Gvt" firstAttribute="height" secondItem="Gkh-r5-D6p" secondAttribute="height" id="PTZ-dP-Mo7"/>
+                                            <constraint firstItem="RYO-aF-Gvt" firstAttribute="top" secondItem="Gkh-r5-D6p" secondAttribute="top" id="r1q-9f-xkX"/>
+                                        </constraints>
+                                        <size key="customSize" width="369" height="144"/>
+                                        <connections>
+                                            <outlet property="activityIndicatorView" destination="q5O-PS-y5K" id="Z1X-L6-M51"/>
+                                            <outlet property="bubbleView" destination="RYO-aF-Gvt" id="9OP-A5-wUP"/>
+                                            <outlet property="messageImageView" destination="hW8-cw-Nva" id="Mva-Pd-2fF"/>
+                                            <outlet property="playButton" destination="C7u-Z1-xwb" id="Ixy-Gd-oql"/>
+                                            <outlet property="textView" destination="BFd-wg-WyU" id="dOz-BC-bqD"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gv5-oR-kOK" firstAttribute="trailing" secondItem="1n2-Rt-gCR" secondAttribute="trailing" id="80T-9t-ZBh"/>
+                            <constraint firstItem="5zE-oV-Pp5" firstAttribute="bottom" secondItem="A63-I2-SyK" secondAttribute="top" id="8gc-2y-wA4"/>
+                            <constraint firstItem="5zE-oV-Pp5" firstAttribute="leading" secondItem="1n2-Rt-gCR" secondAttribute="leading" id="ALT-X5-iIl"/>
+                            <constraint firstItem="1n2-Rt-gCR" firstAttribute="bottom" secondItem="A63-I2-SyK" secondAttribute="bottom" id="DQ6-bE-oXr"/>
+                            <constraint firstItem="5zE-oV-Pp5" firstAttribute="centerX" secondItem="Jhm-qz-G2Q" secondAttribute="centerX" id="EeF-yM-mrL"/>
+                            <constraint firstItem="A63-I2-SyK" firstAttribute="leading" secondItem="1n2-Rt-gCR" secondAttribute="leading" id="G5k-Xr-xn9"/>
+                            <constraint firstItem="5zE-oV-Pp5" firstAttribute="trailing" secondItem="1n2-Rt-gCR" secondAttribute="trailing" id="Gp7-du-oHy"/>
+                            <constraint firstItem="gv5-oR-kOK" firstAttribute="top" secondItem="1n2-Rt-gCR" secondAttribute="top" id="Pn3-PD-C7N"/>
+                            <constraint firstItem="gv5-oR-kOK" firstAttribute="leading" secondItem="1n2-Rt-gCR" secondAttribute="leading" id="agk-1C-n0O"/>
+                            <constraint firstItem="5zE-oV-Pp5" firstAttribute="top" secondItem="gv5-oR-kOK" secondAttribute="bottom" id="l4P-BC-hVo"/>
+                            <constraint firstItem="A63-I2-SyK" firstAttribute="trailing" secondItem="1n2-Rt-gCR" secondAttribute="trailing" id="vJa-ta-Ybn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1n2-Rt-gCR"/>
+                    </view>
+                    <connections>
+                        <outlet property="bioLabel" destination="IZk-en-bhL" id="6jJ-2c-VGn"/>
+                        <outlet property="chatCollectionView" destination="5zE-oV-Pp5" id="j7i-IO-SvO"/>
+                        <outlet property="foodsLabel" destination="CPs-PW-7uj" id="FId-f4-N1c"/>
+                        <outlet property="inputTextField" destination="pyT-F0-Ihn" id="GIE-K2-FZf"/>
+                        <outlet property="name" destination="UQI-Vt-fQu" id="ZRD-8Q-laq"/>
+                        <outlet property="profileImage" destination="yxL-yT-Aeu" id="EBP-eb-HyP"/>
+                        <outlet property="sendContainerBottom" destination="DQ6-bE-oXr" id="Qcv-zc-Y8d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXS-vZ-ZpD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2257" y="-561"/>
+        </scene>
+        <!--Video Chat-->
+        <scene sceneID="Jho-mZ-Qhg">
+            <objects>
+                <viewController storyboardIdentifier="VideoVC" title="Video Chat" id="Oha-0I-ux1" customClass="VideoVC" customModule="Food_Love" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XLL-WF-5Vf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sXk-e9-eEK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3vF-Ku-fR7" customClass="UIImageViewX" customModule="Food_Love" customModuleProvider="target">
+                                <rect key="frame" x="187.5" y="479.5" width="187.5" height="187.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3vF-Ku-fR7" secondAttribute="height" multiplier="1:1" id="GgG-6t-9XK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="appColorRed"/>
+                        <constraints>
+                            <constraint firstItem="3vF-Ku-fR7" firstAttribute="trailing" secondItem="aQd-O2-05E" secondAttribute="trailing" id="8PA-Sk-IJk"/>
+                            <constraint firstItem="sXk-e9-eEK" firstAttribute="top" secondItem="XLL-WF-5Vf" secondAttribute="top" id="Dkb-ba-Kko"/>
+                            <constraint firstItem="sXk-e9-eEK" firstAttribute="trailing" secondItem="aQd-O2-05E" secondAttribute="trailing" id="ERQ-BX-rRh"/>
+                            <constraint firstItem="3vF-Ku-fR7" firstAttribute="bottom" secondItem="aQd-O2-05E" secondAttribute="bottom" id="TuU-FT-PcZ"/>
+                            <constraint firstItem="sXk-e9-eEK" firstAttribute="bottom" secondItem="aQd-O2-05E" secondAttribute="bottom" id="WPP-wY-TsT"/>
+                            <constraint firstItem="sXk-e9-eEK" firstAttribute="leading" secondItem="aQd-O2-05E" secondAttribute="leading" id="aX3-ro-aZn"/>
+                            <constraint firstItem="3vF-Ku-fR7" firstAttribute="width" secondItem="sXk-e9-eEK" secondAttribute="width" multiplier="0.5" id="bCH-FG-4OW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aQd-O2-05E"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QRg-Jh-Aes" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3286" y="-562"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button:kAc-GK-UQV:image" width="47" height="47">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGVVZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEgcI
+ExQZHh8jJCsuMTtDR0tPUlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdz
+Vk5TUmVwc1dOU0NvbG9ygAKAERIgwAAAgAOAC1h7NDcsIDQ3fdIVChYYWk5TLm9iamVjdHOhF4AEgArS
+FQoaHaIbHIAFgAaACRAA0iAKISJfEBROU1RJRkZSZXByZXNlbnRhdGlvboAHgAhPESs6TU0AKgAAIowA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAQEBAScnJycEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoqKiop6enp4fHx8fAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACpqamp/////9nZ2dlYWFhYAwMDAwAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKioqKj///////////n5+fmm
+pqamKysrKwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAp6enp///////
+///////////////f39/fcHBwcA0NDQ0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACn
+p6en////////////////////////////////tra2tj4+Pj4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAKenp6f/////////////////////////////////////6+vr64CAgIAUFBQUAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAp6enp////////////////////////////////////////////////8zMzMxH
+R0dHAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACnp6en////////////////////////////////////////////
+//////////b29vaUlJSUISEhIQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKenp6f/////////////////////////////////
+///////////////////////////////b29vbWFhYWAMDAwMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAp6enp///////////////////////
+///////////////////////////////////////////////7+/v7nZ2dnSUlJSUAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACnp6en////////////
+////////////////////////////////////////////////////////////////////3Nzc3GxsbGwL
+CwsLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKenp6f/
+////////////////////////////////////////////////////////////////////////////////
+/////////7W1tbU7Ozs7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAp6enp///////////////////////////////////////////////////////////////////////
+/////////////////////////+np6emAgICAEhISEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAACnp6en////////////////////////////////////////////////////////////
+///////////////////////////////////////////////IyMjIQ0NDQwEBAQEAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAKenp6f/////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////29vb2jY2NjR8fHx8A
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAp6enp///////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////1dXV1VhYWFgEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACnp6en////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////f39/Z6enp4oKCgoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKenp6f/////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////+Dg4OBQUFBQAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAp6enp///////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////r6+vriYmJiSAgICAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACn
+p6en////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////wMDAwD8/Pz8AAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAKenp6f/////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////8vLy8n19fX0QEBAQAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAp6enp///////////////////////////////////////////////////////
+/////////////////////////////////////////////////////v7+/q6urq44ODg4AAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACnp6en////////////////////////////////////////////
+/////////////////////////////////////////////////////////93d3d1nZ2dnCAgICAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKenp6f/////////////////////////////////
+//////////////////////////////////////////////////////////r6+vqgoKCgJSUlJQAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAp6enp///////////////////////
+///////////////////////////////////////////////////////////////R0dHRU1NTUwUFBQUA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACnp6en////////////
+///////////////////////////////////////////////////////////////19fX1iIiIiBsbGxsA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKenp6f/
+////////////////////////////////////////////////////////////////////vr6+vkFBQUEA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAp6enp///////////////////////////////////////////////////////////5ubm5oGBgYEP
+Dw8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAACnp6en/////////////////////////////////////////////////////7CwsLA6
+Ojo6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAKenp6f//////////////////////////////////////////93d3d1r
+a2trCQkJCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAp6enp/////////////////////////////////n5+fml
+paWlJSUlJQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACnp6en///////////////////////////U
+1NTUVlZWVgUFBQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKenp6f////////////////0
+9PT0jY2NjRsbGxsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqKioqP//////
+////vLy8vEJCQkIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACv
+r6+v7e3t7X5+fn4QEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAQEBAXBwcHBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAABAQEBAgICAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAABABAAADAAAAAQAvAAABAQADAAAAAQAvAAABAgADAAAABAAAI1IBAwADAAAA
+AQABAAABBgADAAAAAQACAAABCgADAAAAAQABAAABEQAEAAAAAQAAAAgBEgADAAAAAQABAAABFQADAAAA
+AQAEAAABFgADAAAAAQAvAAABFwAEAAAAAQAAIoQBHAADAAAAAQABAAABKAADAAAAAQACAAABUgADAAAA
+AQABAAABUwADAAAABAAAI1qHcwAHAAAH2AAAI2IAAAAAAAgACAAIAAgAAQABAAEAAQAAB9hhcHBsAiAA
+AG1udHJSR0IgWFlaIAfZAAIAGQALABoAC2Fjc3BBUFBMAAAAAGFwcGwAAAAAAAAAAAAAAAAAAAAAAAD2
+1gABAAAAANMtYXBwbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+C2Rlc2MAAAEIAAAAb2RzY20AAAF4AAAFnGNwcnQAAAcUAAAAOHd0cHQAAAdMAAAAFHJYWVoAAAdgAAAA
+FGdYWVoAAAd0AAAAFGJYWVoAAAeIAAAAFHJUUkMAAAecAAAADmNoYWQAAAesAAAALGJUUkMAAAecAAAA
+DmdUUkMAAAecAAAADmRlc2MAAAAAAAAAFEdlbmVyaWMgUkdCIFByb2ZpbGUAAAAAAAAAAAAAABRHZW5l
+cmljIFJHQiBQcm9maWxlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAABtbHVjAAAAAAAAAB8AAAAMc2tTSwAAACgAAAGEZGFESwAAAC4AAAGsY2FFUwAAACQAAAHadmlW
+TgAAACQAAAH+cHRCUgAAACYAAAIidWtVQQAAACoAAAJIZnJGVQAAACgAAAJyaHVIVQAAACgAAAKaemhU
+VwAAABYAAALCbmJOTwAAACYAAALYY3NDWgAAACIAAAL+aGVJTAAAAB4AAAMgaXRJVAAAACgAAAM+cm9S
+TwAAACQAAANmZGVERQAAACwAAAOKa29LUgAAABYAAAO2c3ZTRQAAACYAAALYemhDTgAAABYAAAPMamFK
+UAAAABoAAAPiZWxHUgAAACIAAAP8cHRQTwAAACYAAAQebmxOTAAAACgAAAREZXNFUwAAACYAAAQedGhU
+SAAAACQAAARsdHJUUgAAACIAAASQZmlGSQAAACgAAASyaHJIUgAAACgAAATacGxQTAAAACwAAAUCcnVS
+VQAAACIAAAUuYXJFRwAAACYAAAVQZW5VUwAAACYAAAV2AFYBYQBlAG8AYgBlAGMAbgD9ACAAUgBHAEIA
+IABwAHIAbwBmAGkAbABHAGUAbgBlAHIAZQBsACAAUgBHAEIALQBiAGUAcwBrAHIAaQB2AGUAbABzAGUA
+UABlAHIAZgBpAGwAIABSAEcAQgAgAGcAZQBuAOgAcgBpAGMAQx6lAHUAIABoAOwAbgBoACAAUgBHAEIA
+IABDAGgAdQBuAGcAUABlAHIAZgBpAGwAIABSAEcAQgAgAEcAZQBuAOkAcgBpAGMAbwQXBDAEMwQwBDsE
+TAQ9BDgEOQAgBD8EQAQ+BEQEMAQ5BDsAIABSAEcAQgBQAHIAbwBmAGkAbAAgAGcA6QBuAOkAcgBpAHEA
+dQBlACAAUgBWAEIAwQBsAHQAYQBsAOEAbgBvAHMAIABSAEcAQgAgAHAAcgBvAGYAaQBskBp1KAAgAFIA
+RwBCACCCcl9pY8+P8ABHAGUAbgBlAHIAaQBzAGsAIABSAEcAQgAtAHAAcgBvAGYAaQBsAE8AYgBlAGMA
+bgD9ACAAUgBHAEIAIABwAHIAbwBmAGkAbAXkBegF1QXkBdkF3AAgAFIARwBCACAF2wXcBdwF2QBQAHIA
+bwBmAGkAbABvACAAUgBHAEIAIABnAGUAbgBlAHIAaQBjAG8AUAByAG8AZgBpAGwAIABSAEcAQgAgAGcA
+ZQBuAGUAcgBpAGMAQQBsAGwAZwBlAG0AZQBpAG4AZQBzACAAUgBHAEIALQBQAHIAbwBmAGkAbMd8vBgA
+IABSAEcAQgAg1QS4XNMMx3xmbpAaACAAUgBHAEIAIGPPj/Blh072TgCCLAAgAFIARwBCACAw1zDtMNUw
+oTCkMOsDkwO1A70DuQO6A8wAIAPAA8EDvwPGA68DuwAgAFIARwBCAFAAZQByAGYAaQBsACAAUgBHAEIA
+IABnAGUAbgDpAHIAaQBjAG8AQQBsAGcAZQBtAGUAZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAZQBsDkIO
+Gw4jDkQOHw4lDkwAIABSAEcAQgAgDhcOMQ5IDicORA4bAEcAZQBuAGUAbAAgAFIARwBCACAAUAByAG8A
+ZgBpAGwAaQBZAGwAZQBpAG4AZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAaQBsAGkARwBlAG4AZQByAGkB
+DQBrAGkAIABSAEcAQgAgAHAAcgBvAGYAaQBsAFUAbgBpAHcAZQByAHMAYQBsAG4AeQAgAHAAcgBvAGYA
+aQBsACAAUgBHAEIEHgQxBEkEOAQ5ACAEPwRABD4ERAQ4BDsETAAgAFIARwBCBkUGRAZBACAGKgY5BjEG
+SgZBACAAUgBHAEIAIAYnBkQGOQYnBkUARwBlAG4AZQByAGkAYwAgAFIARwBCACAAUAByAG8AZgBpAGwA
+ZXRleHQAAAAAQ29weXJpZ2h0IDIwMDcgQXBwbGUgSW5jLiwgYWxsIHJpZ2h0cyByZXNlcnZlZC4AWFla
+IAAAAAAAAPNSAAEAAAABFs9YWVogAAAAAAAAdE0AAD3uAAAD0FhZWiAAAAAAAABadQAArHMAABc0WFla
+IAAAAAAAACgaAAAVnwAAuDZjdXJ2AAAAAAAAAAEBzQAAc2YzMgAAAAAAAQxCAAAF3v//8yYAAAeSAAD9
+kf//+6L///2jAAAD3AAAwGzSJSYnKFokY2xhc3NuYW1lWCRjbGFzc2VzXxAQTlNCaXRtYXBJbWFnZVJl
+cKMnKSpaTlNJbWFnZVJlcFhOU09iamVjdNIlJiwtV05TQXJyYXmiLCrSJSYvMF5OU011dGFibGVBcnJh
+eaMvLCrVMjM0NQo2Nzg5OldOU1doaXRlXE5TQ29tcG9uZW50c1xOU0NvbG9yU3BhY2VfEBJOU0N1c3Rv
+bUNvbG9yU3BhY2VEMCAwAEMwIDAQA4AMgBDUPD0+Cj9AQUJUTlNJRFVOU0lDQ1dOU01vZGVsEAmADRAA
+gA/SRApFRldOUy5kYXRhTxERaAAAEWhhcHBsAgAAAG1udHJHUkFZWFlaIAfcAAgAFwAPAC4AD2Fjc3BB
+UFBMAAAAAG5vbmUAAAAAAAAAAAAAAAAAAAAAAAD21gABAAAAANMtYXBwbAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWRlc2MAAADAAAAAeWRzY20AAAE8AAAH6GNwcnQA
+AAkkAAAAI3d0cHQAAAlIAAAAFGtUUkMAAAlcAAAIDGRlc2MAAAAAAAAAH0dlbmVyaWMgR3JheSBHYW1t
+YSAyLjIgUHJvZmlsZQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtbHVjAAAAAAAAAB8AAAAMc2tTSwAAAC4A
+AAGEZGFESwAAADgAAAGyY2FFUwAAADgAAAHqdmlWTgAAAEAAAAIicHRCUgAAAEoAAAJidWtVQQAAACwA
+AAKsZnJGVQAAAD4AAALYaHVIVQAAADQAAAMWemhUVwAAAB4AAANKbmJOTwAAADoAAANoY3NDWgAAACgA
+AAOiaGVJTAAAACQAAAPKaXRJVAAAAE4AAAPucm9STwAAACoAAAQ8ZGVERQAAAE4AAARma29LUgAAACIA
+AAS0c3ZTRQAAADgAAAGyemhDTgAAAB4AAATWamFKUAAAACYAAAT0ZWxHUgAAACoAAAUacHRQTwAAAFIA
+AAVEbmxOTAAAAEAAAAWWZXNFUwAAAEwAAAXWdGhUSAAAADIAAAYidHJUUgAAACQAAAZUZmlGSQAAAEYA
+AAZ4aHJIUgAAAD4AAAa+cGxQTAAAAEoAAAb8cnVSVQAAADoAAAdGZW5VUwAAADwAAAeAYXJFRwAAACwA
+AAe8AFYBYQBlAG8AYgBlAGMAbgDhACAAcwBpAHYA4QAgAGcAYQBtAGEAIAAyACwAMgBHAGUAbgBlAHIA
+aQBzAGsAIABnAHIA5QAgADIALAAyACAAZwBhAG0AbQBhAHAAcgBvAGYAaQBsAEcAYQBtAG0AYQAgAGQA
+ZQAgAGcAcgBpAHMAbwBzACAAZwBlAG4A6AByAGkAYwBhACAAMgAuADIAQx6lAHUAIABoAOwAbgBoACAA
+TQDgAHUAIAB4AOEAbQAgAEMAaAB1AG4AZwAgAEcAYQBtAG0AYQAgADIALgAyAFAAZQByAGYAaQBsACAA
+RwBlAG4A6QByAGkAYwBvACAAZABhACAARwBhAG0AYQAgAGQAZQAgAEMAaQBuAHoAYQBzACAAMgAsADIE
+FwQwBDMEMAQ7BEwEPQQwACAARwByAGEAeQAtBDMEMAQ8BDAAIAAyAC4AMgBQAHIAbwBmAGkAbAAgAGcA
+6QBuAOkAcgBpAHEAdQBlACAAZwByAGkAcwAgAGcAYQBtAG0AYQAgADIALAAyAMEAbAB0AGEAbADhAG4A
+bwBzACAAcwB6APwAcgBrAGUAIABnAGEAbQBtAGEAIAAyAC4AMpAadShwcJaOUUlepgAgADIALgAyACCC
+cl9pY8+P8ABHAGUAbgBlAHIAaQBzAGsAIABnAHIA5QAgAGcAYQBtAG0AYQAgADIALAAyAC0AcAByAG8A
+ZgBpAGwATwBiAGUAYwBuAOEAIAFhAGUAZADhACAAZwBhAG0AYQAgADIALgAyBdIF0AXeBdQAIAXQBeQF
+1QXoACAF2wXcBdwF2QAgADIALgAyAFAAcgBvAGYAaQBsAG8AIABnAHIAaQBnAGkAbwAgAGcAZQBuAGUA
+cgBpAGMAbwAgAGQAZQBsAGwAYQAgAGcAYQBtAG0AYQAgADIALAAyAEcAYQBtAGEAIABnAHIAaQAgAGcA
+ZQBuAGUAcgBpAGMBAwAgADIALAAyAEEAbABsAGcAZQBtAGUAaQBuAGUAcwAgAEcAcgBhAHUAcwB0AHUA
+ZgBlAG4ALQBQAHIAbwBmAGkAbAAgAEcAYQBtAG0AYQAgADIALAAyx3y8GAAg1ozAyQAgrBC5yAAgADIA
+LgAyACDVBLhc0wzHfGZukBpwcF6mfPtlcAAgADIALgAyACBjz4/wZYdO9k4AgiwwsDDsMKQwrDDzMN4A
+IAAyAC4AMgAgMNcw7TDVMKEwpDDrA5MDtQO9A7kDugPMACADkwO6A8EDuQAgA5MDrAO8A7wDsQAgADIA
+LgAyAFAAZQByAGYAaQBsACAAZwBlAG4A6QByAGkAYwBvACAAZABlACAAYwBpAG4AegBlAG4AdABvAHMA
+IABkAGEAIABHAGEAbQBtAGEAIAAyACwAMgBBAGwAZwBlAG0AZQBlAG4AIABnAHIAaQBqAHMAIABnAGEA
+bQBtAGEAIAAyACwAMgAtAHAAcgBvAGYAaQBlAGwAUABlAHIAZgBpAGwAIABnAGUAbgDpAHIAaQBjAG8A
+IABkAGUAIABnAGEAbQBtAGEAIABkAGUAIABnAHIAaQBzAGUAcwAgADIALAAyDiMOMQ4HDioONQ5BDgEO
+IQ4hDjIOQA4BDiMOIg5MDhcOMQ5IDicORA4bACAAMgAuADIARwBlAG4AZQBsACAARwByAGkAIABHAGEA
+bQBhACAAMgAsADIAWQBsAGUAaQBuAGUAbgAgAGgAYQByAG0AYQBhAG4AIABnAGEAbQBtAGEAIAAyACwA
+MgAgAC0AcAByAG8AZgBpAGkAbABpAEcAZQBuAGUAcgBpAQ0AawBpACAARwByAGEAeQAgAEcAYQBtAG0A
+YQAgADIALgAyACAAcAByAG8AZgBpAGwAVQBuAGkAdwBlAHIAcwBhAGwAbgB5ACAAcAByAG8AZgBpAGwA
+IABzAHoAYQByAG8BWwBjAGkAIABnAGEAbQBtAGEAIAAyACwAMgQeBDEESQQwBE8AIARBBDUEQAQwBE8A
+IAQzBDAEPAQ8BDAAIAAyACwAMgAtBD8EQAQ+BEQEOAQ7BEwARwBlAG4AZQByAGkAYwAgAEcAcgBhAHkA
+IABHAGEAbQBtAGEAIAAyAC4AMgAgAFAAcgBvAGYAaQBsAGUGOgYnBkUGJwAgADIALgAyACAGRAZIBkYA
+IAYxBkUGJwYvBkoAIAY5BicGRXRleHQAAAAAQ29weXJpZ2h0IEFwcGxlIEluYy4sIDIwMTIAAFhZWiAA
+AAAAAADzUQABAAAAARbMY3VydgAAAAAAAAQAAAAABQAKAA8AFAAZAB4AIwAoAC0AMgA3ADsAQABFAEoA
+TwBUAFkAXgBjAGgAbQByAHcAfACBAIYAiwCQAJUAmgCfAKQAqQCuALIAtwC8AMEAxgDLANAA1QDbAOAA
+5QDrAPAA9gD7AQEBBwENARMBGQEfASUBKwEyATgBPgFFAUwBUgFZAWABZwFuAXUBfAGDAYsBkgGaAaEB
+qQGxAbkBwQHJAdEB2QHhAekB8gH6AgMCDAIUAh0CJgIvAjgCQQJLAlQCXQJnAnECegKEAo4CmAKiAqwC
+tgLBAssC1QLgAusC9QMAAwsDFgMhAy0DOANDA08DWgNmA3IDfgOKA5YDogOuA7oDxwPTA+AD7AP5BAYE
+EwQgBC0EOwRIBFUEYwRxBH4EjASaBKgEtgTEBNME4QTwBP4FDQUcBSsFOgVJBVgFZwV3BYYFlgWmBbUF
+xQXVBeUF9gYGBhYGJwY3BkgGWQZqBnsGjAadBq8GwAbRBuMG9QcHBxkHKwc9B08HYQd0B4YHmQesB78H
+0gflB/gICwgfCDIIRghaCG4IggiWCKoIvgjSCOcI+wkQCSUJOglPCWQJeQmPCaQJugnPCeUJ+woRCicK
+PQpUCmoKgQqYCq4KxQrcCvMLCwsiCzkLUQtpC4ALmAuwC8gL4Qv5DBIMKgxDDFwMdQyODKcMwAzZDPMN
+DQ0mDUANWg10DY4NqQ3DDd4N+A4TDi4OSQ5kDn8Omw62DtIO7g8JDyUPQQ9eD3oPlg+zD88P7BAJECYQ
+QxBhEH4QmxC5ENcQ9RETETERTxFtEYwRqhHJEegSBxImEkUSZBKEEqMSwxLjEwMTIxNDE2MTgxOkE8UT
+5RQGFCcUSRRqFIsUrRTOFPAVEhU0FVYVeBWbFb0V4BYDFiYWSRZsFo8WshbWFvoXHRdBF2UXiReuF9IX
+9xgbGEAYZRiKGK8Y1Rj6GSAZRRlrGZEZtxndGgQaKhpRGncanhrFGuwbFBs7G2MbihuyG9ocAhwqHFIc
+exyjHMwc9R0eHUcdcB2ZHcMd7B4WHkAeah6UHr4e6R8THz4faR+UH78f6iAVIEEgbCCYIMQg8CEcIUgh
+dSGhIc4h+yInIlUigiKvIt0jCiM4I2YjlCPCI/AkHyRNJHwkqyTaJQklOCVoJZclxyX3JicmVyaHJrcm
+6CcYJ0kneierJ9woDSg/KHEooijUKQYpOClrKZ0p0CoCKjUqaCqbKs8rAis2K2krnSvRLAUsOSxuLKIs
+1y0MLUEtdi2rLeEuFi5MLoIuty7uLyQvWi+RL8cv/jA1MGwwpDDbMRIxSjGCMbox8jIqMmMymzLUMw0z
+RjN/M7gz8TQrNGU0njTYNRM1TTWHNcI1/TY3NnI2rjbpNyQ3YDecN9c4FDhQOIw4yDkFOUI5fzm8Ofk6
+Njp0OrI67zstO2s7qjvoPCc8ZTykPOM9Ij1hPaE94D4gPmA+oD7gPyE/YT+iP+JAI0BkQKZA50EpQWpB
+rEHuQjBCckK1QvdDOkN9Q8BEA0RHRIpEzkUSRVVFmkXeRiJGZ0arRvBHNUd7R8BIBUhLSJFI10kdSWNJ
+qUnwSjdKfUrESwxLU0uaS+JMKkxyTLpNAk1KTZNN3E4lTm5Ot08AT0lPk0/dUCdQcVC7UQZRUFGbUeZS
+MVJ8UsdTE1NfU6pT9lRCVI9U21UoVXVVwlYPVlxWqVb3V0RXklfgWC9YfVjLWRpZaVm4WgdaVlqmWvVb
+RVuVW+VcNVyGXNZdJ114XcleGl5sXr1fD19hX7NgBWBXYKpg/GFPYaJh9WJJYpxi8GNDY5dj62RAZJRk
+6WU9ZZJl52Y9ZpJm6Gc9Z5Nn6Wg/aJZo7GlDaZpp8WpIap9q92tPa6dr/2xXbK9tCG1gbbluEm5rbsRv
+Hm94b9FwK3CGcOBxOnGVcfByS3KmcwFzXXO4dBR0cHTMdSh1hXXhdj52m3b4d1Z3s3gReG54zHkqeYl5
+53pGeqV7BHtje8J8IXyBfOF9QX2hfgF+Yn7CfyN/hH/lgEeAqIEKgWuBzYIwgpKC9INXg7qEHYSAhOOF
+R4Wrhg6GcobXhzuHn4gEiGmIzokziZmJ/opkisqLMIuWi/yMY4zKjTGNmI3/jmaOzo82j56QBpBukNaR
+P5GokhGSepLjk02TtpQglIqU9JVflcmWNJaflwqXdZfgmEyYuJkkmZCZ/JpomtWbQpuvnByciZz3nWSd
+0p5Anq6fHZ+Ln/qgaaDYoUehtqImopajBqN2o+akVqTHpTilqaYapoum/adup+CoUqjEqTepqaocqo+r
+Aqt1q+msXKzQrUStuK4trqGvFq+LsACwdbDqsWCx1rJLssKzOLOutCW0nLUTtYq2AbZ5tvC3aLfguFm4
+0blKucK6O7q1uy67p7whvJu9Fb2Pvgq+hL7/v3q/9cBwwOzBZ8Hjwl/C28NYw9TEUcTOxUvFyMZGxsPH
+Qce/yD3IvMk6ybnKOMq3yzbLtsw1zLXNNc21zjbOts83z7jQOdC60TzRvtI/0sHTRNPG1EnUy9VO1dHW
+VdbY11zX4Nhk2OjZbNnx2nba+9uA3AXcit0Q3ZbeHN6i3ynfr+A24L3hROHM4lPi2+Nj4+vkc+T85YTm
+DeaW5x/nqegy6LzpRunQ6lvq5etw6/vshu0R7ZzuKO6070DvzPBY8OXxcvH/8ozzGfOn9DT0wvVQ9d72
+bfb794r4Gfio+Tj5x/pX+uf7d/wH/Jj9Kf26/kv+3P9t//+ADtIlJkhJXU5TTXV0YWJsZURhdGGjSEoq
+Vk5TRGF0YdIlJkxNXE5TQ29sb3JTcGFjZaJOKlxOU0NvbG9yU3BhY2XSJSZQUVdOU0NvbG9yolAq0iUm
+U1RXTlNJbWFnZaJTKl8QD05TS2V5ZWRBcmNoaXZlctFXWFRyb290gAEACAARABoAIwAtADIANwBMAFIA
+XQBkAGsAeAB/AIcAiQCLAJAAkgCUAJ0AogCtAK8AsQCzALgAuwC9AL8AwQDDAMgA3wDhAOMsISwmLDEs
+OixNLFEsXCxlLGoscix1LHosiSyNLJgsoCytLLoszyzULNgs2izcLN4s5yzsLPIs+iz8LP4tAC0CLQct
+Dz57Pn0+gj6QPpQ+mz6gPq0+sD69PsI+yj7NPtI+2j7dPu8+8j73AAAAAAAAAgEAAAAAAAAAWQAAAAAA
+AAAAAAAAAAAAPvk
+</mutableData>
+        </image>
+        <image name="location" width="16" height="16"/>
+        <image name="online" width="16" height="16"/>
+        <image name="play" width="16" height="16"/>
+        <image name="sent" width="16" height="16"/>
+        <image name="takephotos" width="16" height="16"/>
+        <namedColor name="appColorBlack">
+            <color name="ibMissingResourceColor" catalog="#$assets-com.apple.dt.DVTKit" colorSpace="catalog"/>
+        </namedColor>
+        <namedColor name="appColorGray">
+            <color name="ibMissingResourceColor" catalog="#$assets-com.apple.dt.DVTKit" colorSpace="catalog"/>
+        </namedColor>
+        <namedColor name="appColorRed">
+            <color name="ibMissingResourceColor" catalog="#$assets-com.apple.dt.DVTKit" colorSpace="catalog"/>
+        </namedColor>
+        <namedColor name="appColorWhite">
+            <color name="ibMissingResourceColor" catalog="#$assets-com.apple.dt.DVTKit" colorSpace="catalog"/>
+        </namedColor>
+    </resources>
+</document>
