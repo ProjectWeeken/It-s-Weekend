@@ -348,10 +348,13 @@
         <scene sceneID="PIl-yx-GEi">
             <objects>
                 <tabBarController storyboardIdentifier="tabBarID" id="zlv-xP-7wo" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dQM-GM-XK2">
+                    <tabBar key="tabBar" alpha="0.75" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dQM-GM-XK2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.53333333329999999" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.96078431369999995" green="0.60784313729999995" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Fsb-36-pKz" kind="relationship" relationship="viewControllers" id="8xV-VY-j3u"/>
@@ -376,9 +379,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.55000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="jzJ-X7-W5E">
-                                <rect key="frame" x="4" y="0.0" width="406" height="687"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.55000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="jzJ-X7-W5E">
+                                <rect key="frame" x="4" y="0.0" width="406" height="736"/>
                             </imageView>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRG-ct-0ZK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.60784313729999995" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1000" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30l-cy-y4k">
                                 <rect key="frame" x="0.0" y="444" width="414" height="243"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -397,8 +405,8 @@
                                 <string key="text">Meet someone in real life. Date the honest way! 
 
 Start the conversation with your correspondence by saying what you want: · BECOME if you want a connection (an occasional relationship)  APPOINTMENT if you want a boyfriend or girlfriend (something more serious / romantic)</string>
-                                <color key="textColor" red="0.85947730219999996" green="1" blue="0.96686039680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.27450980392156865" green="0.23137254901960785" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.34999999403953552" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="clip" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="2IW-pz-hzu">
@@ -422,7 +430,7 @@ Start the conversation with your correspondence by saying what you want: · BECO
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="PxS-Th-bnp" firstAttribute="top" secondItem="jzJ-X7-W5E" secondAttribute="bottom" id="2Di-wt-rAr"/>
+                            <constraint firstItem="PxS-Th-bnp" firstAttribute="top" relation="lessThanOrEqual" secondItem="jzJ-X7-W5E" secondAttribute="bottom" id="2Di-wt-rAr"/>
                             <constraint firstItem="2IW-pz-hzu" firstAttribute="centerX" secondItem="30l-cy-y4k" secondAttribute="centerX" id="85B-rv-jIp"/>
                             <constraint firstItem="QVF-10-YM6" firstAttribute="width" secondItem="wlJ-dh-blM" secondAttribute="width" multiplier="0.9" id="85S-f6-kWD"/>
                             <constraint firstItem="QVF-10-YM6" firstAttribute="centerX" secondItem="30l-cy-y4k" secondAttribute="centerX" id="A0r-5s-Tvi"/>
@@ -471,7 +479,7 @@ Start the conversation with your correspondence by saying what you want: · BECO
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ht-lq-Yxc" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="609" y="-20"/>
+            <point key="canvasLocation" x="608.69565217391312" y="-20.380434782608699"/>
         </scene>
         <!--Udetails View Controller-->
         <scene sceneID="GGe-o7-I3J">
@@ -587,6 +595,6 @@ Start the conversation with your correspondence by saying what you want: · BECO
         <image name="currentLocation" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nvr-BP-5ur"/>
+        <segue reference="ogT-9I-KnW"/>
     </inferredMetricsTieBreakers>
 </document>
