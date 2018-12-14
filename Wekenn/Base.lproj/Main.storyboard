@@ -121,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-533" y="426"/>
+            <point key="canvasLocation" x="-1025" y="20"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="wD4-16-2B4">
@@ -148,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4AX-5B-UZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1305.7971014492755" y="-359.51086956521743"/>
+            <point key="canvasLocation" x="-1842" y="24"/>
         </scene>
         <!--Home-->
         <scene sceneID="K11-qb-Pg9">
@@ -189,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Wt-CU-h4Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1109" y="1058"/>
+            <point key="canvasLocation" x="-1842" y="1459"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="eCx-0H-S7x">
@@ -294,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wf0-L0-fBy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-533" y="1357"/>
+            <point key="canvasLocation" x="-1025" y="951"/>
         </scene>
         <!--Profil-->
         <scene sceneID="fsT-8h-jOC">
@@ -306,11 +306,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sYK-sM-C8F"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profil" id="KlU-cL-mh1"/>
+                    <tabBarItem key="tabBarItem" title="Profil" image="profile-Icon" id="KlU-cL-mh1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIL-QQ-G3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="232" y="1740"/>
+            <point key="canvasLocation" x="-258" y="1335"/>
         </scene>
         <!--Parties-->
         <scene sceneID="oiZ-51-nM3">
@@ -322,11 +322,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="h4V-n9-pgd"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Parties" id="SUV-vg-6Xc"/>
+                    <tabBarItem key="tabBarItem" title="Parties" image="favor-icon" id="SUV-vg-6Xc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fMp-Ok-6sk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1030" y="1740"/>
+            <point key="canvasLocation" x="539" y="1335"/>
         </scene>
         <!--Likers-->
         <scene sceneID="jss-Nh-yLg">
@@ -338,31 +338,36 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="d5Y-QZ-doN"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Likers" id="ekg-Gd-Vka"/>
+                    <tabBarItem key="tabBarItem" title="Likers" image="favor-icon" id="ekg-Gd-Vka"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTp-gC-v96" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1874" y="1740"/>
+            <point key="canvasLocation" x="1384" y="1335"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PIl-yx-GEi">
             <objects>
                 <tabBarController storyboardIdentifier="tabBarID" id="zlv-xP-7wo" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dQM-GM-XK2">
+                    <tabBar key="tabBar" alpha="0.75" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dQM-GM-XK2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.53333333329999999" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.96078431369999995" green="0.60784313729999995" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.96470588239999999" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Fsb-36-pKz" kind="relationship" relationship="viewControllers" id="8xV-VY-j3u"/>
                         <segue destination="hDm-l1-1Jn" kind="relationship" relationship="viewControllers" id="KeK-qn-LZk"/>
-                        <segue destination="Rky-tl-BYu" kind="relationship" relationship="viewControllers" id="VQm-RT-oYY"/>
+                        <segue destination="NXe-Vs-tRs" kind="relationship" relationship="viewControllers" id="Cx0-yz-cec"/>
+                        <segue destination="K6s-Se-1cQ" kind="relationship" relationship="viewControllers" id="bY6-qK-tfC"/>
                         <segue destination="V3b-OT-iEg" kind="relationship" relationship="viewControllers" id="Ohj-tT-dBe"/>
+                        <segue destination="Rky-tl-BYu" kind="relationship" relationship="viewControllers" id="VQm-RT-oYY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XFt-3H-vPX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="233" y="906"/>
+            <point key="canvasLocation" x="-258" y="501"/>
         </scene>
         <!--Home-->
         <scene sceneID="eSj-TV-vFn">
@@ -376,9 +381,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.55000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="jzJ-X7-W5E">
-                                <rect key="frame" x="4" y="0.0" width="406" height="687"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.55000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="jzJ-X7-W5E">
+                                <rect key="frame" x="4" y="0.0" width="406" height="736"/>
                             </imageView>
+                            <view alpha="0.20000000000000001" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRG-ct-0ZK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.60784313729999995" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1000" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30l-cy-y4k">
                                 <rect key="frame" x="0.0" y="444" width="414" height="243"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -397,8 +407,8 @@
                                 <string key="text">Meet someone in real life. Date the honest way! 
 
 Start the conversation with your correspondence by saying what you want: · BECOME if you want a connection (an occasional relationship)  APPOINTMENT if you want a boyfriend or girlfriend (something more serious / romantic)</string>
-                                <color key="textColor" red="0.85947730219999996" green="1" blue="0.96686039680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.27450980392156865" green="0.23137254901960785" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.34999999403953552" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="clip" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="2IW-pz-hzu">
@@ -422,7 +432,7 @@ Start the conversation with your correspondence by saying what you want: · BECO
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="PxS-Th-bnp" firstAttribute="top" secondItem="jzJ-X7-W5E" secondAttribute="bottom" id="2Di-wt-rAr"/>
+                            <constraint firstItem="PxS-Th-bnp" firstAttribute="top" relation="lessThanOrEqual" secondItem="jzJ-X7-W5E" secondAttribute="bottom" id="2Di-wt-rAr"/>
                             <constraint firstItem="2IW-pz-hzu" firstAttribute="centerX" secondItem="30l-cy-y4k" secondAttribute="centerX" id="85B-rv-jIp"/>
                             <constraint firstItem="QVF-10-YM6" firstAttribute="width" secondItem="wlJ-dh-blM" secondAttribute="width" multiplier="0.9" id="85S-f6-kWD"/>
                             <constraint firstItem="QVF-10-YM6" firstAttribute="centerX" secondItem="30l-cy-y4k" secondAttribute="centerX" id="A0r-5s-Tvi"/>
@@ -453,17 +463,17 @@ Start the conversation with your correspondence by saying what you want: · BECO
                             <mask key="constraints">
                                 <exclude reference="85B-rv-jIp"/>
                                 <exclude reference="ezD-t0-fpX"/>
-                                <exclude reference="znE-x7-ld5"/>
-                                <exclude reference="BwJ-oa-V1T"/>
-                                <exclude reference="uc8-Av-bTi"/>
                                 <exclude reference="A0r-5s-Tvi"/>
+                                <exclude reference="BwJ-oa-V1T"/>
                                 <exclude reference="JbJ-Fd-Umj"/>
-                                <exclude reference="l17-To-JuA"/>
+                                <exclude reference="uc8-Av-bTi"/>
+                                <exclude reference="znE-x7-ld5"/>
                                 <exclude reference="Dsg-Wz-yDX"/>
+                                <exclude reference="l17-To-JuA"/>
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="PX3-F9-ddY"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home-icon" id="PX3-F9-ddY"/>
                     <connections>
                         <outlet property="bgImage" destination="jzJ-X7-W5E" id="xgv-cc-HTd"/>
                         <outlet property="listView" destination="30l-cy-y4k" id="BYp-cU-uck"/>
@@ -471,7 +481,7 @@ Start the conversation with your correspondence by saying what you want: · BECO
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ht-lq-Yxc" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1109" y="388"/>
+            <point key="canvasLocation" x="608.69565217391312" y="-20.380434782608699"/>
         </scene>
         <!--Udetails View Controller-->
         <scene sceneID="GGe-o7-I3J">
@@ -519,7 +529,7 @@ Start the conversation with your correspondence by saying what you want: · BECO
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSy-G3-vLj">
-                                        <rect key="frame" x="227" y="223" width="171" height="149"/>
+                                        <rect key="frame" x="227" y="222.33333333333337" width="171" height="149"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="YGJ-T4-BpE"/>
                                         </constraints>
@@ -576,17 +586,54 @@ Start the conversation with your correspondence by saying what you want: · BECO
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lf1-s3-utr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1949" y="387"/>
+            <point key="canvasLocation" x="1457" y="-19"/>
+        </scene>
+        <!--Meet-->
+        <scene sceneID="umJ-JF-sZW">
+            <objects>
+                <viewController id="NXe-Vs-tRs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W6Q-xq-CPg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yrj-gT-nsa"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Meet" image="account-icon" id="fw6-xJ-o7N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="haG-oI-6b7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1728" y="645"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9Ur-f0-ftO">
+            <objects>
+                <viewController id="K6s-Se-1cQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mjY-w5-69u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dae-wo-GJQ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="notification-icon" badgeValue="1" id="2h9-Nr-UKx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rgu-bg-OP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2445" y="644"/>
         </scene>
     </scenes>
     <resources>
         <image name="-logou&amp;me" width="648" height="648"/>
         <image name="Love-2" width="1920" height="1080"/>
         <image name="Love-3" width="1920" height="1080"/>
+        <image name="account-icon" width="30" height="25"/>
         <image name="bg" width="640" height="1136"/>
         <image name="currentLocation" width="256" height="256"/>
+        <image name="favor-icon" width="30" height="30"/>
+        <image name="home-icon" width="30" height="30"/>
+        <image name="notification-icon" width="30" height="30"/>
+        <image name="profile-Icon" width="26" height="26"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nvr-BP-5ur"/>
+        <segue reference="ogT-9I-KnW"/>
     </inferredMetricsTieBreakers>
 </document>

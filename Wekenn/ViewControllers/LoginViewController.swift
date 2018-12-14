@@ -15,10 +15,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
-       /* let currentUser = PFUser.current()
+        let currentUser = PFUser.current()
         if currentUser != nil {
             loadHomeScreen()
-        }*/
+        }
     }
     
     func loadHomeScreen(){
