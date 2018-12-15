@@ -306,7 +306,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sYK-sM-C8F"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profil" image="profile-Icon" id="KlU-cL-mh1"/>
+                    <tabBarItem key="tabBarItem" title="Profil" image="circle-user-7" id="KlU-cL-mh1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIL-QQ-G3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -322,7 +322,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="h4V-n9-pgd"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Parties" image="favor-icon" id="SUV-vg-6Xc"/>
+                    <tabBarItem key="tabBarItem" title="Parties" image="electric-7" id="SUV-vg-6Xc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fMp-Ok-6sk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -338,7 +338,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="d5Y-QZ-doN"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Likers" image="favor-icon" id="ekg-Gd-Vka"/>
+                    <tabBarItem key="tabBarItem" title="Likers" image="heart-7" id="ekg-Gd-Vka"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTp-gC-v96" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -353,23 +353,22 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="1" green="0.53333333329999999" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.96078431369999995" green="0.60784313729999995" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="selectedImageTintColor" red="1" green="0.96470588239999999" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="1" green="0.66274509800000003" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Fsb-36-pKz" kind="relationship" relationship="viewControllers" id="8xV-VY-j3u"/>
                         <segue destination="hDm-l1-1Jn" kind="relationship" relationship="viewControllers" id="KeK-qn-LZk"/>
-                        <segue destination="NXe-Vs-tRs" kind="relationship" relationship="viewControllers" id="Cx0-yz-cec"/>
-                        <segue destination="K6s-Se-1cQ" kind="relationship" relationship="viewControllers" id="bY6-qK-tfC"/>
                         <segue destination="V3b-OT-iEg" kind="relationship" relationship="viewControllers" id="Ohj-tT-dBe"/>
                         <segue destination="Rky-tl-BYu" kind="relationship" relationship="viewControllers" id="VQm-RT-oYY"/>
+                        <segue destination="K6s-Se-1cQ" kind="relationship" relationship="viewControllers" id="bY6-qK-tfC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XFt-3H-vPX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-258" y="501"/>
         </scene>
-        <!--Home-->
+        <!--Meet-->
         <scene sceneID="eSj-TV-vFn">
             <objects>
                 <viewController id="Fsb-36-pKz" customClass="HomeViewController" customModule="Wekenn" customModuleProvider="target" sceneMemberID="viewController">
@@ -473,7 +472,7 @@ Start the conversation with your correspondence by saying what you want: · BECO
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="home-icon" id="PX3-F9-ddY"/>
+                    <tabBarItem key="tabBarItem" title="Meet" image="account-icon" id="PX3-F9-ddY"/>
                     <connections>
                         <outlet property="bgImage" destination="jzJ-X7-W5E" id="xgv-cc-HTd"/>
                         <outlet property="listView" destination="30l-cy-y4k" id="BYp-cU-uck"/>
@@ -529,7 +528,7 @@ Start the conversation with your correspondence by saying what you want: · BECO
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSy-G3-vLj">
-                                        <rect key="frame" x="227" y="222.33333333333337" width="171" height="149"/>
+                                        <rect key="frame" x="227" y="222.66666666666663" width="171" height="149"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="YGJ-T4-BpE"/>
                                         </constraints>
@@ -604,7 +603,7 @@ Start the conversation with your correspondence by saying what you want: · BECO
             </objects>
             <point key="canvasLocation" x="1728" y="645"/>
         </scene>
-        <!--View Controller-->
+        <!--Notifications-->
         <scene sceneID="9Ur-f0-ftO">
             <objects>
                 <viewController id="K6s-Se-1cQ" sceneMemberID="viewController">
@@ -614,7 +613,7 @@ Start the conversation with your correspondence by saying what you want: · BECO
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dae-wo-GJQ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="notification-icon" badgeValue="1" id="2h9-Nr-UKx"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="notification-icon" badgeValue="1" id="2h9-Nr-UKx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rgu-bg-OP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -627,11 +626,11 @@ Start the conversation with your correspondence by saying what you want: · BECO
         <image name="Love-3" width="1920" height="1080"/>
         <image name="account-icon" width="30" height="25"/>
         <image name="bg" width="640" height="1136"/>
+        <image name="circle-user-7" width="30" height="30"/>
         <image name="currentLocation" width="256" height="256"/>
-        <image name="favor-icon" width="30" height="30"/>
-        <image name="home-icon" width="30" height="30"/>
+        <image name="electric-7" width="30" height="30"/>
+        <image name="heart-7" width="30" height="30"/>
         <image name="notification-icon" width="30" height="30"/>
-        <image name="profile-Icon" width="26" height="26"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ogT-9I-KnW"/>
