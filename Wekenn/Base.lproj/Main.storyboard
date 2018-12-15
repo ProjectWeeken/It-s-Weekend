@@ -487,9 +487,6 @@
                         <viewLayoutGuide key="safeArea" id="AIp-al-SE1"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profil" image="profile-Icon" id="KlU-cL-mh1"/>
-                    <connections>
-                        <outlet property="profileImageView" destination="5qf-p0-w59" id="60l-1n-5I2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIL-QQ-G3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1238,7 +1235,7 @@ Start the conversation with your correspondence by saying what you want: · BECO
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sOG-Pg-q6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2272" y="1754"/>
+            <point key="canvasLocation" x="706" y="2208"/>
         </scene>
         <!--Chat Controller-->
         <scene sceneID="Vfb-a3-Avm">
