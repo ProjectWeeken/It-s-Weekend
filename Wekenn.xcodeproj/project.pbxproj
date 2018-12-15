@@ -14,6 +14,8 @@
 		641A4675216E2EF5005971B7 /* WekennTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641A4674216E2EF5005971B7 /* WekennTests.swift */; };
 		641A4680216E2EF5005971B7 /* WekennUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641A467F216E2EF5005971B7 /* WekennUITests.swift */; };
 		944BB0D721AF60E200F8A0EE /* Mapdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944BB0D621AF60E200F8A0EE /* Mapdata.swift */; };
+		94E4A93321C54F5000FE0939 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E4A93221C54F5000FE0939 /* ProfileViewController.swift */; };
+		94E4A93921C551AC00FE0939 /* LikersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E4A93821C551AC00FE0939 /* LikersCollectionViewCell.swift */; };
 		96B36CA621896BFD007F8EE1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA521896BFD007F8EE1 /* LoginViewController.swift */; };
 		96B36CA821896C08007F8EE1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA721896C08007F8EE1 /* SignUpViewController.swift */; };
 		96B36CAA21896C15007F8EE1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA921896C15007F8EE1 /* HomeViewController.swift */; };
@@ -60,6 +62,8 @@
 		641A4681216E2EF5005971B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		674DCEDCABAA15ED25353148 /* Pods-WekennTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WekennTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WekennTests/Pods-WekennTests.release.xcconfig"; sourceTree = "<group>"; };
 		944BB0D621AF60E200F8A0EE /* Mapdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapdata.swift; sourceTree = "<group>"; };
+		94E4A93221C54F5000FE0939 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		94E4A93821C551AC00FE0939 /* LikersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikersCollectionViewCell.swift; sourceTree = "<group>"; };
 		96B36CA521896BFD007F8EE1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		96B36CA721896C08007F8EE1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		96B36CA921896C15007F8EE1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 		641A465E216E2EF2005971B7 /* Wekenn */ = {
 			isa = PBXGroup;
 			children = (
+				94E4A93721C5517400FE0939 /* Likers Views */,
 				9415AA6421B21900009A1CDB /* SupportingFiles */,
 				944BB0D521AF607D00F8A0EE /* Model */,
 				96B36C9E218967D2007F8EE1 /* ViewControllers */,
@@ -195,6 +200,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		94E4A93721C5517400FE0939 /* Likers Views */ = {
+			isa = PBXGroup;
+			children = (
+				94E4A93821C551AC00FE0939 /* LikersCollectionViewCell.swift */,
+			);
+			path = "Likers Views";
+			sourceTree = "<group>";
+		};
 		96B36C9E218967D2007F8EE1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +216,7 @@
 				96BE653221C1EE2E00EEBB6C /* LoadingViewViewController.swift */,
 				96B36CA921896C15007F8EE1 /* HomeViewController.swift */,
 				96BE653E21C2524700EEBB6C /* UdetailsViewController.swift */,
+				94E4A93221C54F5000FE0939 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -425,10 +439,12 @@
 			files = (
 				96BE653321C1EE2E00EEBB6C /* LoadingViewViewController.swift in Sources */,
 				96BE653F21C2524700EEBB6C /* UdetailsViewController.swift in Sources */,
+				94E4A93921C551AC00FE0939 /* LikersCollectionViewCell.swift in Sources */,
 				96B36CA821896C08007F8EE1 /* SignUpViewController.swift in Sources */,
 				96B36CA621896BFD007F8EE1 /* LoginViewController.swift in Sources */,
 				96BE653D21C2484900EEBB6C /* Umodel.swift in Sources */,
 				641A4660216E2EF2005971B7 /* AppDelegate.swift in Sources */,
+				94E4A93321C54F5000FE0939 /* ProfileViewController.swift in Sources */,
 				96B36CAA21896C15007F8EE1 /* HomeViewController.swift in Sources */,
 				944BB0D721AF60E200F8A0EE /* Mapdata.swift in Sources */,
 			);
