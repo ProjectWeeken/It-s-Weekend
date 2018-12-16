@@ -358,7 +358,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="Fsb-36-pKz" kind="relationship" relationship="viewControllers" id="8xV-VY-j3u"/>
-                        <segue destination="hDm-l1-1Jn" kind="relationship" relationship="viewControllers" id="KeK-qn-LZk"/>
                         <segue destination="V3b-OT-iEg" kind="relationship" relationship="viewControllers" id="Ohj-tT-dBe"/>
                         <segue destination="Rky-tl-BYu" kind="relationship" relationship="viewControllers" id="VQm-RT-oYY"/>
                         <segue destination="K6s-Se-1cQ" kind="relationship" relationship="viewControllers" id="bY6-qK-tfC"/>
@@ -528,7 +527,7 @@ Start the conversation with your correspondence by saying what you want: · BECO
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSy-G3-vLj">
-                                        <rect key="frame" x="227" y="223" width="171" height="149"/>
+                                        <rect key="frame" x="227" y="222.33333333333337" width="171" height="149"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="YGJ-T4-BpE"/>
                                         </constraints>
