@@ -17,6 +17,8 @@
 		96B36CA621896BFD007F8EE1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA521896BFD007F8EE1 /* LoginViewController.swift */; };
 		96B36CA821896C08007F8EE1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA721896C08007F8EE1 /* SignUpViewController.swift */; };
 		96B36CAA21896C15007F8EE1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA921896C15007F8EE1 /* HomeViewController.swift */; };
+		96BCB05721C6E41E00490AB3 /* Likers Views in Resources */ = {isa = PBXBuildFile; fileRef = 96BCB05621C6E41E00490AB3 /* Likers Views */; };
+		96BCB05D21C6EBF900490AB3 /* Chat in Resources */ = {isa = PBXBuildFile; fileRef = 96BCB05C21C6EBF900490AB3 /* Chat */; };
 		96BE653321C1EE2E00EEBB6C /* LoadingViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE653221C1EE2E00EEBB6C /* LoadingViewViewController.swift */; };
 		96BE653D21C2484900EEBB6C /* Umodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE653C21C2484900EEBB6C /* Umodel.swift */; };
 		96BE653F21C2524700EEBB6C /* UdetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE653E21C2524700EEBB6C /* UdetailsViewController.swift */; };
@@ -63,6 +65,8 @@
 		96B36CA521896BFD007F8EE1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		96B36CA721896C08007F8EE1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		96B36CA921896C15007F8EE1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		96BCB05621C6E41E00490AB3 /* Likers Views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Likers Views"; sourceTree = SOURCE_ROOT; };
+		96BCB05C21C6EBF900490AB3 /* Chat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Chat; sourceTree = "<group>"; };
 		96BE653221C1EE2E00EEBB6C /* LoadingViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewViewController.swift; sourceTree = "<group>"; };
 		96BE653C21C2484900EEBB6C /* Umodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Umodel.swift; sourceTree = "<group>"; };
 		96BE653E21C2524700EEBB6C /* UdetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdetailsViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 		641A465E216E2EF2005971B7 /* Wekenn */ = {
 			isa = PBXGroup;
 			children = (
+				96BCB05C21C6EBF900490AB3 /* Chat */,
+				96BCB05621C6E41E00490AB3 /* Likers Views */,
 				9415AA6421B21900009A1CDB /* SupportingFiles */,
 				944BB0D521AF607D00F8A0EE /* Model */,
 				96B36C9E218967D2007F8EE1 /* ViewControllers */,
@@ -315,9 +321,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BCB05721C6E41E00490AB3 /* Likers Views in Resources */,
 				641A466A216E2EF5005971B7 /* LaunchScreen.storyboard in Resources */,
 				641A4667216E2EF5005971B7 /* Assets.xcassets in Resources */,
 				641A4665216E2EF2005971B7 /* Main.storyboard in Resources */,
+				96BCB05D21C6EBF900490AB3 /* Chat in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
