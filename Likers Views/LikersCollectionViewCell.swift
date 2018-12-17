@@ -10,4 +10,8 @@ import UIKit
 
 class LikersCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var likerImageView: UIImageView!
+    
+    @IBOutlet weak var likerNameLabel: UILabel!
+    
 }
