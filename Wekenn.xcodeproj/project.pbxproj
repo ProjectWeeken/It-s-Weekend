@@ -16,6 +16,7 @@
 		944BB0D721AF60E200F8A0EE /* Mapdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944BB0D621AF60E200F8A0EE /* Mapdata.swift */; };
 		9644FD0E21C858D700FB5CD1 /* LikersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD0C21C858D700FB5CD1 /* LikersCollectionViewCell.swift */; };
 		9644FD0F21C858D700FB5CD1 /* LikersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9644FD0D21C858D700FB5CD1 /* LikersCollectionViewCell.xib */; };
+		9644FD1321C86D3E00FB5CD1 /* LikersViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD1221C86D3E00FB5CD1 /* LikersViewCell.swift */; };
 		96B36CA621896BFD007F8EE1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA521896BFD007F8EE1 /* LoginViewController.swift */; };
 		96B36CA821896C08007F8EE1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA721896C08007F8EE1 /* SignUpViewController.swift */; };
 		96B36CAA21896C15007F8EE1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA921896C15007F8EE1 /* HomeViewController.swift */; };
@@ -66,6 +67,7 @@
 		944BB0D621AF60E200F8A0EE /* Mapdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapdata.swift; sourceTree = "<group>"; };
 		9644FD0C21C858D700FB5CD1 /* LikersCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LikersCollectionViewCell.swift; path = "Likers Views/LikersCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		9644FD0D21C858D700FB5CD1 /* LikersCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LikersCollectionViewCell.xib; path = "Likers Views/LikersCollectionViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		9644FD1221C86D3E00FB5CD1 /* LikersViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikersViewCell.swift; sourceTree = "<group>"; };
 		96B36CA521896BFD007F8EE1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		96B36CA721896C08007F8EE1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		96B36CA921896C15007F8EE1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			children = (
 				9644FD0C21C858D700FB5CD1 /* LikersCollectionViewCell.swift */,
 				9644FD0D21C858D700FB5CD1 /* LikersCollectionViewCell.xib */,
+				9644FD1221C86D3E00FB5CD1 /* LikersViewCell.swift */,
 			);
 			path = "Likers Views";
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				9644FD0E21C858D700FB5CD1 /* LikersCollectionViewCell.swift in Sources */,
 				96B36CA821896C08007F8EE1 /* SignUpViewController.swift in Sources */,
 				96B36CA621896BFD007F8EE1 /* LoginViewController.swift in Sources */,
+				9644FD1321C86D3E00FB5CD1 /* LikersViewCell.swift in Sources */,
 				96BE653D21C2484900EEBB6C /* Umodel.swift in Sources */,
 				96BCB05F21C8432700490AB3 /* likersViewController.swift in Sources */,
 				641A4660216E2EF2005971B7 /* AppDelegate.swift in Sources */,

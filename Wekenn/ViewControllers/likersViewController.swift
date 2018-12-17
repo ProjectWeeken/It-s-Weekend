@@ -8,10 +8,9 @@
 
 import UIKit
 
-class likersViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class likersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
-    @IBOutlet weak var collectionView: UICollectionView!
-    
+    @IBOutlet weak var tableView: UITableView!
     
     let likers = ["Zazou","Papi","Keke"]
     let likersImage : [UIImage] = [
@@ -25,16 +24,16 @@ class likersViewController: UIViewController, UICollectionViewDelegate, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        collectionView.dataSource = self
-        collectionView.delegate = self
+        tableView.dataSource = self
+        tableView.delegate = self
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return likers.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "likerCell", for: indexPath) as! LikersCollectionViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "likerCell", for: indexPath) as! LikersViewCell
         cell.likerNameLabel.text = likers[indexPath.item]
         cell.likerImageView.image = likersImage[indexPath.item]
         return cell
