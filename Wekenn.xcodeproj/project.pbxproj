@@ -17,6 +17,10 @@
 		9644FD0E21C858D700FB5CD1 /* LikersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD0C21C858D700FB5CD1 /* LikersCollectionViewCell.swift */; };
 		9644FD0F21C858D700FB5CD1 /* LikersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9644FD0D21C858D700FB5CD1 /* LikersCollectionViewCell.xib */; };
 		9644FD1321C86D3E00FB5CD1 /* LikersViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD1221C86D3E00FB5CD1 /* LikersViewCell.swift */; };
+		9644FD1521C93C0600FB5CD1 /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD1421C93C0600FB5CD1 /* ProfilViewController.swift */; };
+		9644FD1721C93C1400FB5CD1 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD1621C93C1300FB5CD1 /* EditProfileViewController.swift */; };
+		9644FD1B21C93D6100FB5CD1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD1A21C93D6000FB5CD1 /* Post.swift */; };
+		9644FD1D21C93DD400FB5CD1 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD1C21C93DD300FB5CD1 /* GalleryCell.swift */; };
 		96B36CA621896BFD007F8EE1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA521896BFD007F8EE1 /* LoginViewController.swift */; };
 		96B36CA821896C08007F8EE1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA721896C08007F8EE1 /* SignUpViewController.swift */; };
 		96B36CAA21896C15007F8EE1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA921896C15007F8EE1 /* HomeViewController.swift */; };
@@ -68,6 +72,10 @@
 		9644FD0C21C858D700FB5CD1 /* LikersCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LikersCollectionViewCell.swift; path = "Likers Views/LikersCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		9644FD0D21C858D700FB5CD1 /* LikersCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LikersCollectionViewCell.xib; path = "Likers Views/LikersCollectionViewCell.xib"; sourceTree = SOURCE_ROOT; };
 		9644FD1221C86D3E00FB5CD1 /* LikersViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikersViewCell.swift; sourceTree = "<group>"; };
+		9644FD1421C93C0600FB5CD1 /* ProfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfilViewController.swift; path = ../../../Instagram/Instagram/ViewControllers/ProfilViewController.swift; sourceTree = "<group>"; };
+		9644FD1621C93C1300FB5CD1 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditProfileViewController.swift; path = ../../../Instagram/Instagram/ViewControllers/EditProfileViewController.swift; sourceTree = "<group>"; };
+		9644FD1A21C93D6000FB5CD1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = ../../Instagram/Instagram/Post.swift; sourceTree = "<group>"; };
+		9644FD1C21C93DD300FB5CD1 /* GalleryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryCell.swift; path = ../../Instagram/Instagram/GalleryCell.swift; sourceTree = "<group>"; };
 		96B36CA521896BFD007F8EE1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		96B36CA721896C08007F8EE1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		96B36CA921896C15007F8EE1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +167,8 @@
 		641A465E216E2EF2005971B7 /* Wekenn */ = {
 			isa = PBXGroup;
 			children = (
+				9644FD1A21C93D6000FB5CD1 /* Post.swift */,
+				9644FD1C21C93DD300FB5CD1 /* GalleryCell.swift */,
 				9644FD0B21C858CA00FB5CD1 /* Likers Views */,
 				96BCB05C21C6EBF900490AB3 /* Chat */,
 				9415AA6421B21900009A1CDB /* SupportingFiles */,
@@ -222,7 +232,9 @@
 			children = (
 				96B36CA521896BFD007F8EE1 /* LoginViewController.swift */,
 				96B36CA721896C08007F8EE1 /* SignUpViewController.swift */,
+				9644FD1621C93C1300FB5CD1 /* EditProfileViewController.swift */,
 				96BE653221C1EE2E00EEBB6C /* LoadingViewViewController.swift */,
+				9644FD1421C93C0600FB5CD1 /* ProfilViewController.swift */,
 				96B36CA921896C15007F8EE1 /* HomeViewController.swift */,
 				96BE653E21C2524700EEBB6C /* UdetailsViewController.swift */,
 				96BCB05E21C8432700490AB3 /* likersViewController.swift */,
@@ -448,9 +460,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9644FD1721C93C1400FB5CD1 /* EditProfileViewController.swift in Sources */,
+				9644FD1521C93C0600FB5CD1 /* ProfilViewController.swift in Sources */,
 				96BE653321C1EE2E00EEBB6C /* LoadingViewViewController.swift in Sources */,
 				96BE653F21C2524700EEBB6C /* UdetailsViewController.swift in Sources */,
 				9644FD0E21C858D700FB5CD1 /* LikersCollectionViewCell.swift in Sources */,
+				9644FD1B21C93D6100FB5CD1 /* Post.swift in Sources */,
+				9644FD1D21C93DD400FB5CD1 /* GalleryCell.swift in Sources */,
 				96B36CA821896C08007F8EE1 /* SignUpViewController.swift in Sources */,
 				96B36CA621896BFD007F8EE1 /* LoginViewController.swift in Sources */,
 				9644FD1321C86D3E00FB5CD1 /* LikersViewCell.swift in Sources */,
