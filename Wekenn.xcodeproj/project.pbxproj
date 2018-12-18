@@ -21,6 +21,7 @@
 		9644FD1721C93C1400FB5CD1 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD1621C93C1300FB5CD1 /* EditProfileViewController.swift */; };
 		9644FD1B21C93D6100FB5CD1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD1A21C93D6000FB5CD1 /* Post.swift */; };
 		9644FD1D21C93DD400FB5CD1 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD1C21C93DD300FB5CD1 /* GalleryCell.swift */; };
+		9644FD1F21C95AE900FB5CD1 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD1E21C95AE800FB5CD1 /* CameraViewController.swift */; };
 		96B36CA621896BFD007F8EE1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA521896BFD007F8EE1 /* LoginViewController.swift */; };
 		96B36CA821896C08007F8EE1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA721896C08007F8EE1 /* SignUpViewController.swift */; };
 		96B36CAA21896C15007F8EE1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA921896C15007F8EE1 /* HomeViewController.swift */; };
@@ -76,6 +77,7 @@
 		9644FD1621C93C1300FB5CD1 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditProfileViewController.swift; path = ../../../Instagram/Instagram/ViewControllers/EditProfileViewController.swift; sourceTree = "<group>"; };
 		9644FD1A21C93D6000FB5CD1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = ../../Instagram/Instagram/Post.swift; sourceTree = "<group>"; };
 		9644FD1C21C93DD300FB5CD1 /* GalleryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryCell.swift; path = ../../Instagram/Instagram/GalleryCell.swift; sourceTree = "<group>"; };
+		9644FD1E21C95AE800FB5CD1 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = ../../../Instagram/Instagram/ViewControllers/CameraViewController.swift; sourceTree = "<group>"; };
 		96B36CA521896BFD007F8EE1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		96B36CA721896C08007F8EE1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		96B36CA921896C15007F8EE1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				96B36CA521896BFD007F8EE1 /* LoginViewController.swift */,
+				9644FD1E21C95AE800FB5CD1 /* CameraViewController.swift */,
 				96B36CA721896C08007F8EE1 /* SignUpViewController.swift */,
 				9644FD1621C93C1300FB5CD1 /* EditProfileViewController.swift */,
 				96BE653221C1EE2E00EEBB6C /* LoadingViewViewController.swift */,
@@ -473,6 +476,7 @@
 				96BE653D21C2484900EEBB6C /* Umodel.swift in Sources */,
 				96BCB05F21C8432700490AB3 /* likersViewController.swift in Sources */,
 				641A4660216E2EF2005971B7 /* AppDelegate.swift in Sources */,
+				9644FD1F21C95AE900FB5CD1 /* CameraViewController.swift in Sources */,
 				96B36CAA21896C15007F8EE1 /* HomeViewController.swift in Sources */,
 				944BB0D721AF60E200F8A0EE /* Mapdata.swift in Sources */,
 			);
