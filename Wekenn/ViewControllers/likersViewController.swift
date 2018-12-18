@@ -26,6 +26,9 @@ class likersViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.rowHeight = 200
+        tableView.estimatedRowHeight = 200
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -36,6 +39,10 @@ class likersViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: "likerCell", for: indexPath) as! LikersViewCell
         cell.likerNameLabel.text = likers[indexPath.item]
         cell.likerImageView.image = likersImage[indexPath.item]
+        
+        cell.likerImageView.layer.cornerRadius = 65
+        cell.likerImageView.clipsToBounds = true
+        
         return cell
         
     }

@@ -12,6 +12,8 @@ class LikersViewCell: UITableViewCell {
     @IBOutlet weak var likerImageView: UIImageView!
     
     @IBOutlet weak var likerNameLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
