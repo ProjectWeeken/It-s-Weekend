@@ -510,7 +510,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N0G-Kf-ent" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5302.898550724638" y="-1348.3695652173915"/>
+            <point key="canvasLocation" x="-3779.7101449275365" y="-1348.3695652173915"/>
         </scene>
         <!--Likers-->
         <scene sceneID="2R6-ap-K2i">
@@ -563,7 +563,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fjr-3R-5Iz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2847.826086956522" y="-1346.7391304347827"/>
+            <point key="canvasLocation" x="-1940.5797101449277" y="-1346.7391304347827"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sSA-UG-HIc">
@@ -581,9 +581,9 @@
                         <segue destination="hhO-Ez-uPh" kind="relationship" relationship="viewControllers" id="c4D-bJ-s5c"/>
                         <segue destination="Gl9-7z-bqu" kind="relationship" relationship="viewControllers" id="CqN-rc-v8r"/>
                         <segue destination="5Ce-8S-Jl3" kind="relationship" relationship="viewControllers" id="7h1-Py-NpN"/>
+                        <segue destination="ORq-V9-CyQ" kind="relationship" relationship="viewControllers" id="8X3-tE-wJw"/>
                         <segue destination="l6x-5w-z6B" kind="relationship" relationship="viewControllers" id="CmO-l3-DWX"/>
                         <segue destination="5qW-3m-wJd" kind="relationship" relationship="viewControllers" id="POe-YP-34Z"/>
-                        <segue destination="ORq-V9-CyQ" kind="relationship" relationship="viewControllers" id="8X3-tE-wJw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BT2-ZK-OKD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1513,6 +1513,7 @@ Europe...</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GGs-Kz-coz">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.60784313729999995" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1521,12 +1522,12 @@ Europe...</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yxJ-9n-bMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3756.521739130435" y="-1346.7391304347827"/>
+            <point key="canvasLocation" x="-2849.275362318841" y="-1346.7391304347827"/>
         </scene>
-        <!--Instagram Profil-->
+        <!--Profil-->
         <scene sceneID="Bb9-dA-gvI">
             <objects>
-                <viewController storyboardIdentifier="profileViewID" id="ORq-V9-CyQ" customClass="ProfilViewController" customModule="Wekenn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profileViewID" title="Profil" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ORq-V9-CyQ" customClass="ProfilViewController" customModule="Wekenn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ahG-e5-vGf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1568,21 +1569,21 @@ Europe...</string>
                                     <constraint firstAttribute="height" constant="371" id="zgr-i1-fJI"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Y8p-gp-RJt">
-                                    <size key="itemSize" width="104" height="103"/>
+                                    <size key="itemSize" width="190" height="219"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GalleryCell" id="VAD-Bf-WCg" customClass="GalleryCell" customModule="Wekenn" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="104" height="103"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="219"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="104" height="103"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="190" height="219"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Love-3" translatesAutoresizingMaskIntoConstraints="NO" id="dz3-eR-PBS">
-                                                    <rect key="frame" x="4" y="0.0" width="100" height="95"/>
+                                                    <rect key="frame" x="4" y="0.0" width="178" height="211"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -1692,6 +1693,7 @@ Europe...</string>
                                 </state>
                                 <connections>
                                     <action selector="editProfileButton:" destination="ORq-V9-CyQ" eventType="touchUpInside" id="89P-cV-eC5"/>
+                                    <segue destination="l7y-Hs-fM4" kind="presentation" id="pvz-BV-npy"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4J-fm-wG1">
@@ -1804,13 +1806,13 @@ Europe...</string>
                     </view>
                     <navigationItem key="navigationItem" title="Add new Picture" id="bYN-sG-AyZ">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="zna-HR-1G8">
-                            <color key="tintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="onCancel:" destination="FlK-TQ-9HK" id="n3E-jU-jh1"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Share" id="aQG-tP-CFP">
-                            <color key="tintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="onSubmit:" destination="FlK-TQ-9HK" id="0Md-1k-Uhv"/>
                             </connections>
@@ -1834,6 +1836,7 @@ Europe...</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gkv-m4-4jG">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.60784313729999995" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1843,6 +1846,89 @@ Europe...</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aib-ZW-1Ps" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-6712" y="-964"/>
+        </scene>
+        <!--Change Profile-->
+        <scene sceneID="nhi-eM-KLj">
+            <objects>
+                <viewController id="Bqa-2M-DQz" customClass="EditProfileViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NR5-w3-HYM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk8-5b-5OW">
+                                <rect key="frame" x="87" y="103" width="239" height="200"/>
+                                <color key="backgroundColor" red="0.85489371830000005" green="0.85489371830000005" blue="0.85489371830000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="hcd-13-Png"/>
+                                    <constraint firstAttribute="height" constant="200" id="njg-Vt-Xff"/>
+                                </constraints>
+                                <state key="normal" title="Tap change"/>
+                                <connections>
+                                    <action selector="tapProfileTake:" destination="Bqa-2M-DQz" eventType="touchUpInside" id="GbR-cB-aYE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="157-RX-qNA">
+                                <rect key="frame" x="16" y="323" width="343" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nuh-AC-WTv">
+                                <rect key="frame" x="87" y="103" width="239" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fk8-5b-5OW" firstAttribute="leading" secondItem="4wU-02-g2L" secondAttribute="leading" constant="87" id="2av-m2-QFG"/>
+                            <constraint firstItem="4wU-02-g2L" firstAttribute="trailing" secondItem="fk8-5b-5OW" secondAttribute="trailing" constant="88" id="ddm-Ep-iaX"/>
+                            <constraint firstItem="fk8-5b-5OW" firstAttribute="top" secondItem="4wU-02-g2L" secondAttribute="top" constant="39" id="l3O-Qe-3km"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4wU-02-g2L"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Change Profile" id="iSz-xe-Klb">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="LMY-FA-fUh">
+                            <color key="tintColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onCancel:" destination="Bqa-2M-DQz" id="jhd-tj-Xx4"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="UvP-Li-prP">
+                            <color key="tintColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onSaveProfile:" destination="Bqa-2M-DQz" id="ky5-7o-Ebe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="captionTextImage" destination="157-RX-qNA" id="km6-EM-kd7"/>
+                        <outlet property="profileImage" destination="nuh-AC-WTv" id="GWr-de-j9N"/>
+                        <outlet property="tapText" destination="fk8-5b-5OW" id="WzJ-Jz-wrd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Onw-Ek-pQs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4444.927536231884" y="-1348.3695652173915"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yyO-qt-Zxz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l7y-Hs-fM4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lt8-Uq-ARA">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.60784313729999995" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bqa-2M-DQz" kind="relationship" relationship="rootViewController" id="jKW-EZ-JVZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V6f-KA-LNQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5200" y="-1348"/>
         </scene>
     </scenes>
     <resources>

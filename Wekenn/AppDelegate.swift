@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+    
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         Parse.initialize(
             with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
@@ -25,6 +27,80 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://itsweekend.herokuapp.com/parse"
             })
         )
+        
+        //----------------------
+        
+        //------------logOut
+        NotificationCenter.default.addObserver(forName: Notification.Name("didLogout"), object: nil, queue: OperationQueue.main) { (Notification) in
+            print("Logout notification received")
+            // TODO: Logout the User
+            logOut()
+            // TODO: Load and show the login view controller
+        }
+        
+        NotificationCenter.default.addObserver(forName: Notification.Name("didCancel"), object: nil, queue: OperationQueue.main) { (Notification) in
+            print("Cancel Capture")
+            // TODO: Cancel
+            cancel()
+            // TODO: Load and show the login view controller
+            
+        }
+        NotificationCenter.default.addObserver(forName: Notification.Name("didShare"), object: nil, queue: OperationQueue.main) { (Notification) in
+            print("Picture Sharing Successfully")
+            share()
+            // TODO: Load and show the login view controller
+        }
+        func share(){
+            if PFUser.current() != nil {
+                let vc = storyboard.instantiateViewController(withIdentifier: "tabBarID")
+                window?.rootViewController = vc
+            }
+        }
+        NotificationCenter.default.addObserver(forName: Notification.Name("didCancelProfile"), object: nil, queue: OperationQueue.main) { (Notification) in
+            print("Cancel Capture")
+            // TODO: Cancel
+            cancel()
+            // TODO: Load and show the login view controller
+            
+        }
+        NotificationCenter.default.addObserver(forName: Notification.Name("didSaveProfile"), object: nil, queue: OperationQueue.main) { (Notification) in
+            print("Profile Picture Saved Successfully")
+            saveProfile()
+            // TODO: Load and show the login view controller
+        }
+        func saveProfile(){
+            if PFUser.current() != nil {
+                let vc = storyboard.instantiateViewController(withIdentifier: "profileViewID")
+                window?.rootViewController = vc
+            }
+        }
+        
+        
+        func logOut() {
+            // print("logOut success")
+            
+            // Logout the current user
+            PFUser.logOutInBackground(block: { (error) in
+                if let error = error {
+                    print(error.localizedDescription)
+                } else {
+                    print("Successful loggout")
+                    // Load and show the login view controller
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let LoginViewController = storyboard.instantiateViewController(withIdentifier: "loginViewID")
+                    self.window?.rootViewController = LoginViewController
+                }
+            })
+        }
+        func cancel(){
+            
+            if PFUser.current() != nil {
+                let vc = storyboard.instantiateViewController(withIdentifier: "tabBarID")
+                window?.rootViewController = vc
+            }
+        }
+        
+        //----------------------
         
         return true
     }
