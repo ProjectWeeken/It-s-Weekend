@@ -14,11 +14,19 @@
 		641A4675216E2EF5005971B7 /* WekennTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641A4674216E2EF5005971B7 /* WekennTests.swift */; };
 		641A4680216E2EF5005971B7 /* WekennUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641A467F216E2EF5005971B7 /* WekennUITests.swift */; };
 		944BB0D721AF60E200F8A0EE /* Mapdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944BB0D621AF60E200F8A0EE /* Mapdata.swift */; };
+		9644FD0E21C858D700FB5CD1 /* LikersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD0C21C858D700FB5CD1 /* LikersCollectionViewCell.swift */; };
+		9644FD0F21C858D700FB5CD1 /* LikersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9644FD0D21C858D700FB5CD1 /* LikersCollectionViewCell.xib */; };
+		9644FD1321C86D3E00FB5CD1 /* LikersViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD1221C86D3E00FB5CD1 /* LikersViewCell.swift */; };
+		9644FD1521C93C0600FB5CD1 /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD1421C93C0600FB5CD1 /* ProfilViewController.swift */; };
+		9644FD1721C93C1400FB5CD1 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD1621C93C1300FB5CD1 /* EditProfileViewController.swift */; };
+		9644FD1B21C93D6100FB5CD1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD1A21C93D6000FB5CD1 /* Post.swift */; };
+		9644FD1D21C93DD400FB5CD1 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD1C21C93DD300FB5CD1 /* GalleryCell.swift */; };
+		9644FD1F21C95AE900FB5CD1 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644FD1E21C95AE800FB5CD1 /* CameraViewController.swift */; };
 		96B36CA621896BFD007F8EE1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA521896BFD007F8EE1 /* LoginViewController.swift */; };
 		96B36CA821896C08007F8EE1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA721896C08007F8EE1 /* SignUpViewController.swift */; };
 		96B36CAA21896C15007F8EE1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B36CA921896C15007F8EE1 /* HomeViewController.swift */; };
-		96BCB05721C6E41E00490AB3 /* Likers Views in Resources */ = {isa = PBXBuildFile; fileRef = 96BCB05621C6E41E00490AB3 /* Likers Views */; };
 		96BCB05D21C6EBF900490AB3 /* Chat in Resources */ = {isa = PBXBuildFile; fileRef = 96BCB05C21C6EBF900490AB3 /* Chat */; };
+		96BCB05F21C8432700490AB3 /* likersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BCB05E21C8432700490AB3 /* likersViewController.swift */; };
 		96BE653321C1EE2E00EEBB6C /* LoadingViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE653221C1EE2E00EEBB6C /* LoadingViewViewController.swift */; };
 		96BE653D21C2484900EEBB6C /* Umodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE653C21C2484900EEBB6C /* Umodel.swift */; };
 		96BE653F21C2524700EEBB6C /* UdetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE653E21C2524700EEBB6C /* UdetailsViewController.swift */; };
@@ -62,11 +70,19 @@
 		641A4681216E2EF5005971B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		674DCEDCABAA15ED25353148 /* Pods-WekennTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WekennTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WekennTests/Pods-WekennTests.release.xcconfig"; sourceTree = "<group>"; };
 		944BB0D621AF60E200F8A0EE /* Mapdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapdata.swift; sourceTree = "<group>"; };
+		9644FD0C21C858D700FB5CD1 /* LikersCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LikersCollectionViewCell.swift; path = "Likers Views/LikersCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		9644FD0D21C858D700FB5CD1 /* LikersCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LikersCollectionViewCell.xib; path = "Likers Views/LikersCollectionViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		9644FD1221C86D3E00FB5CD1 /* LikersViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikersViewCell.swift; sourceTree = "<group>"; };
+		9644FD1421C93C0600FB5CD1 /* ProfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfilViewController.swift; path = ../../../Instagram/Instagram/ViewControllers/ProfilViewController.swift; sourceTree = "<group>"; };
+		9644FD1621C93C1300FB5CD1 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditProfileViewController.swift; path = ../../../Instagram/Instagram/ViewControllers/EditProfileViewController.swift; sourceTree = "<group>"; };
+		9644FD1A21C93D6000FB5CD1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = ../../Instagram/Instagram/Post.swift; sourceTree = "<group>"; };
+		9644FD1C21C93DD300FB5CD1 /* GalleryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryCell.swift; path = ../../Instagram/Instagram/GalleryCell.swift; sourceTree = "<group>"; };
+		9644FD1E21C95AE800FB5CD1 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = ../../../Instagram/Instagram/ViewControllers/CameraViewController.swift; sourceTree = "<group>"; };
 		96B36CA521896BFD007F8EE1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		96B36CA721896C08007F8EE1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		96B36CA921896C15007F8EE1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		96BCB05621C6E41E00490AB3 /* Likers Views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Likers Views"; sourceTree = SOURCE_ROOT; };
 		96BCB05C21C6EBF900490AB3 /* Chat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Chat; sourceTree = "<group>"; };
+		96BCB05E21C8432700490AB3 /* likersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likersViewController.swift; sourceTree = "<group>"; };
 		96BE653221C1EE2E00EEBB6C /* LoadingViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewViewController.swift; sourceTree = "<group>"; };
 		96BE653C21C2484900EEBB6C /* Umodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Umodel.swift; sourceTree = "<group>"; };
 		96BE653E21C2524700EEBB6C /* UdetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdetailsViewController.swift; sourceTree = "<group>"; };
@@ -153,8 +169,10 @@
 		641A465E216E2EF2005971B7 /* Wekenn */ = {
 			isa = PBXGroup;
 			children = (
+				9644FD1A21C93D6000FB5CD1 /* Post.swift */,
+				9644FD1C21C93DD300FB5CD1 /* GalleryCell.swift */,
+				9644FD0B21C858CA00FB5CD1 /* Likers Views */,
 				96BCB05C21C6EBF900490AB3 /* Chat */,
-				96BCB05621C6E41E00490AB3 /* Likers Views */,
 				9415AA6421B21900009A1CDB /* SupportingFiles */,
 				944BB0D521AF607D00F8A0EE /* Model */,
 				96B36C9E218967D2007F8EE1 /* ViewControllers */,
@@ -201,14 +219,28 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		9644FD0B21C858CA00FB5CD1 /* Likers Views */ = {
+			isa = PBXGroup;
+			children = (
+				9644FD0C21C858D700FB5CD1 /* LikersCollectionViewCell.swift */,
+				9644FD0D21C858D700FB5CD1 /* LikersCollectionViewCell.xib */,
+				9644FD1221C86D3E00FB5CD1 /* LikersViewCell.swift */,
+			);
+			path = "Likers Views";
+			sourceTree = "<group>";
+		};
 		96B36C9E218967D2007F8EE1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				96B36CA521896BFD007F8EE1 /* LoginViewController.swift */,
+				9644FD1E21C95AE800FB5CD1 /* CameraViewController.swift */,
 				96B36CA721896C08007F8EE1 /* SignUpViewController.swift */,
+				9644FD1621C93C1300FB5CD1 /* EditProfileViewController.swift */,
 				96BE653221C1EE2E00EEBB6C /* LoadingViewViewController.swift */,
+				9644FD1421C93C0600FB5CD1 /* ProfilViewController.swift */,
 				96B36CA921896C15007F8EE1 /* HomeViewController.swift */,
 				96BE653E21C2524700EEBB6C /* UdetailsViewController.swift */,
+				96BCB05E21C8432700490AB3 /* likersViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -321,9 +353,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96BCB05721C6E41E00490AB3 /* Likers Views in Resources */,
 				641A466A216E2EF5005971B7 /* LaunchScreen.storyboard in Resources */,
 				641A4667216E2EF5005971B7 /* Assets.xcassets in Resources */,
+				9644FD0F21C858D700FB5CD1 /* LikersCollectionViewCell.xib in Resources */,
 				641A4665216E2EF2005971B7 /* Main.storyboard in Resources */,
 				96BCB05D21C6EBF900490AB3 /* Chat in Resources */,
 			);
@@ -431,12 +463,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9644FD1721C93C1400FB5CD1 /* EditProfileViewController.swift in Sources */,
+				9644FD1521C93C0600FB5CD1 /* ProfilViewController.swift in Sources */,
 				96BE653321C1EE2E00EEBB6C /* LoadingViewViewController.swift in Sources */,
 				96BE653F21C2524700EEBB6C /* UdetailsViewController.swift in Sources */,
+				9644FD0E21C858D700FB5CD1 /* LikersCollectionViewCell.swift in Sources */,
+				9644FD1B21C93D6100FB5CD1 /* Post.swift in Sources */,
+				9644FD1D21C93DD400FB5CD1 /* GalleryCell.swift in Sources */,
 				96B36CA821896C08007F8EE1 /* SignUpViewController.swift in Sources */,
 				96B36CA621896BFD007F8EE1 /* LoginViewController.swift in Sources */,
+				9644FD1321C86D3E00FB5CD1 /* LikersViewCell.swift in Sources */,
 				96BE653D21C2484900EEBB6C /* Umodel.swift in Sources */,
+				96BCB05F21C8432700490AB3 /* likersViewController.swift in Sources */,
 				641A4660216E2EF2005971B7 /* AppDelegate.swift in Sources */,
+				9644FD1F21C95AE900FB5CD1 /* CameraViewController.swift in Sources */,
 				96B36CAA21896C15007F8EE1 /* HomeViewController.swift in Sources */,
 				944BB0D721AF60E200F8A0EE /* Mapdata.swift in Sources */,
 			);
